@@ -13,10 +13,11 @@ import os
 BASE_DIR = '/Users/daanwalter/Library/CloudStorage/OneDrive-SharedLibraries-Ember/ember-futures - Documents/03 Research/2026/97 Ideas/Ternary Chart Playground'
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 IIASA_FILE = os.path.join(DATA_DIR, 'IIASA_dataset.csv')
-IEA_FILE = os.path.join(DATA_DIR, 'WORLDBAL.TXT')
+IEA_FILE = os.path.join(DATA_DIR, 'WORLDBAL - with2023.TXT')
 EMBER_FILE = os.path.join(DATA_DIR, 'Ember Electricity Generation Data.xlsx')
 NEW_EMBER_FILE = os.path.join(DATA_DIR, 'electricity-prod-source-stacked.csv')
 OUTPUT_HTML = os.path.join(BASE_DIR, 'all_countries_ternary_charts.html')
+OUTPUT_JSON = os.path.join(BASE_DIR, 'data.json')
 
 import pandas as pd
 
@@ -55,10 +56,15 @@ REGION_CONFIG = {
                          'iea_calc': ('NOECDTOT', ['EURASIA'])}, # NOECDTOT includes FSU(EURASIA) + East Europe. So Sub FSU gives East Eur.
     'Rest of OECD (1990)': {'color': '#6ee7b7', 'short': 'RO9', 'iiasa': 'O90other', 
                             'iea_calc': ('OECDTOT', ['USA', 'GERMANY', 'UK', 'JAPAN', 'FRANCE', 'AUSTRALI', 'CANADA', 'ITALY'])},
+    'Europe': {'color': '#3b82f6', 'short': 'EUR', 'iea': 'EUROPE_UN', 'ember': 'Europe',
+               'iiasa_calc': (['Germany', 'France', 'United Kingdom', 'Italy', 'Poland'], [])},
 }
 
 # Inverse mappings
-IIASA_TO_DISPLAY = {v['iiasa']: k for k, v in REGION_CONFIG.items()}
+IIASA_TO_DISPLAY = {v['iiasa']: k for k, v in REGION_CONFIG.items() if 'iiasa' in v}
+# IIASA calculable regions (aggregate regions)
+IIASA_CALC_REGIONS = {k: v['iiasa_calc'] for k, v in REGION_CONFIG.items() if 'iiasa_calc' in v}
+
 # IEA Loading needs to range over all explicit codes AND all codes mentioned in calcs
 IEA_CODES_TO_LOAD = set()
 for v in REGION_CONFIG.values():
@@ -75,19 +81,19 @@ IIASA_FOSSIL = ['Coal Products', 'Natural Gas', 'Petroleum Products']
 IIASA_TOTAL = ['All Fuels'] # Used to calculate "Bio and other" as residual
 
 # IEA product classification
-IEA_ELECTRONS = ['ELECTR']
-IEA_FOSSIL = ['COAL', 'NATGAS', 'MTOTOIL']
+IEA_ELECTRONS = ['ELECTRICITY']
+IEA_FOSSIL = ['COAL', 'NATURAL_GAS', 'OIL_TOTAL']
 IEA_TOTAL = ['TOTAL'] # Used to calculate "Bio and other" as residual
 
 def parse_iea_line(line):
-    if len(line) < 80: return None
-    country = line[0:16].strip()
-    product = line[16:32].strip()
-    year = line[32:48].strip()
-    flow = line[48:64].strip()
-    unit = line[64:80].strip()
-    value_str = line[80:].strip()
-    if '..' in value_str or not value_str: return None
+    if len(line) < 150: return None
+    country = line[0:30].strip()
+    product = line[30:60].strip()
+    year = line[60:90].strip()
+    flow = line[90:120].strip()
+    unit = line[120:150].strip()
+    value_str = line[150:180].strip()
+    if '..' in value_str or not value_str or 'x' in value_str: return None
     try:
         year = int(year)
         value = float(value_str)
@@ -95,7 +101,17 @@ def parse_iea_line(line):
     return {'country': country, 'product': product, 'year': year, 'flow': flow, 'unit': unit, 'value': value}
 
 def load_iiasa_data(filepath):
-    energy_data = defaultdict(lambda: defaultdict(dict))
+    # Raw IIASA store: Region -> Year -> Category -> Value
+    raw_iiasa = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
+    
+    # Countries/Regions we need to load:
+    # 1. Explicitly mapped in IIASA_TO_DISPLAY
+    # 2. Components of IIASA_CALC_REGIONS
+    regions_to_load = set(IIASA_TO_DISPLAY.keys())
+    for pos, neg in IIASA_CALC_REGIONS.values():
+        regions_to_load.update(pos)
+        regions_to_load.update(neg)
+    
     print(f"Reading {filepath}...")
     with open(filepath, 'r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
@@ -103,31 +119,66 @@ def load_iiasa_data(filepath):
             if row['Type'] != 'Final Energy' or row['Sector'] != 'All Sectors': continue
             iiasa_region = row['Region']
             fuel = row['Fuel']
-            if iiasa_region not in IIASA_TO_DISPLAY: continue
-            display_name = IIASA_TO_DISPLAY[iiasa_region]
+            if iiasa_region not in regions_to_load: continue
             
             # Load Electrons, Fossil, and Total
             if fuel not in (IIASA_ELECTRONS + IIASA_FOSSIL + IIASA_TOTAL): continue
             
+            cat = 'electrons' if fuel in IIASA_ELECTRONS else 'fossil' if fuel in IIASA_FOSSIL else 'total'
+            
             for year_str, val in row.items():
-                if year_str.isdigit():
-                    year = int(year_str)
-                    if val:
-                        try:
-                            value = float(val)
-                            cat = 'electrons' if fuel in IIASA_ELECTRONS else 'fossil' if fuel in IIASA_FOSSIL else 'total'
-                            if cat not in energy_data[display_name][year]: energy_data[display_name][year][cat] = 0
-                            energy_data[display_name][year][cat] += value
-                        except ValueError: pass
+                if year_str.isdigit() and val:
+                    try:
+                        year = int(year_str)
+                        value = float(val)
+                        raw_iiasa[iiasa_region][year][cat] += value
+                    except ValueError: pass
     
-    # Calculate "Bio and other" as residual (Total - Electrons - Fossil)
+    # Process into Display Names
+    energy_data = defaultdict(lambda: defaultdict(dict))
+    
+    for display_name, config in REGION_CONFIG.items():
+        # Direct Mapping
+        if 'iiasa' in config:
+            code = config['iiasa']
+            for year, cats in raw_iiasa[code].items():
+                energy_data[display_name][year] = cats.copy()
+        
+        # Calculated Mapping
+        elif 'iiasa_calc' in config:
+            pos_codes, neg_codes = config['iiasa_calc']
+            
+            # Find all relevant years
+            all_years = set()
+            for code in pos_codes + neg_codes:
+                all_years.update(raw_iiasa[code].keys())
+            
+            for year in all_years:
+                res = {'electrons': 0, 'fossil': 0, 'total': 0}
+                
+                # Add positives
+                for code in pos_codes:
+                    if year in raw_iiasa[code]:
+                        for c in res: res[c] += raw_iiasa[code][year].get(c, 0)
+                
+                # Subtract negatives
+                for code in neg_codes:
+                    if year in raw_iiasa[code]:
+                        for c in res: res[c] -= raw_iiasa[code][year].get(c, 0)
+                
+                # Ensure no negatives
+                for c in res: res[c] = max(0, res[c])
+                
+                if sum(res.values()) > 0:
+                    energy_data[display_name][year] = res
+    
+    # Calculate "Bio and other" as residual
     for country in energy_data:
         for year in energy_data[country]:
             rec = energy_data[country][year]
             total = rec.get('total', 0)
             elec = rec.get('electrons', 0)
             foss = rec.get('fossil', 0)
-            # Ensure Bio includes everything else
             bio = max(0, total - elec - foss)
             energy_data[country][year]['bio'] = bio
             
@@ -595,6 +646,12 @@ def main():
         # Inject Ember Power Data if available
         if c in ember_data and y in ember_data[c]:
             combined_data[c][y]['power'] = ember_data[c][y]
+
+    # Ensure all years from Ember are also included in combined_data (even if missing from Final/Useful)
+    for c, years in ember_data.items():
+        for y, data in years.items():
+            if y not in combined_data[c]:
+                combined_data[c][y]['power'] = data
 
 
     # HTML Template (Reverting to original design + small Toggle)
@@ -1148,10 +1205,6 @@ def main():
                             <div class="tooltip-row"><span class="tooltip-label">${labels.elec}</span><span class="tooltip-value">${(d.elec*100).toFixed(1)}%</span></div>
                             <div class="tooltip-row"><span class="tooltip-label">${labels.foss}</span><span class="tooltip-value">${(d.foss*100).toFixed(1)}%</span></div>
                             <div class="tooltip-row"><span class="tooltip-label">${labels.bio}</span><span class="tooltip-value">${(d.bio*100).toFixed(1)}%</span></div>
-                            <div class="tooltip-row" style="margin-top:8px; padding-top:8px; border-top:1px solid #f1f5f9;">
-                                <span class="tooltip-label">${labels.total}</span><span class="tooltip-value">${d.absolute.toLocaleString()} ${energyMode === 'power' ? 'TWh' : 'Mtoe'}</span>
-                            </div>
-                            <div class="tooltip-source">Source: ${d.source}</div>
                         `);
                     d3.selectAll('.year-trail').classed('dimmed', true);
                     d3.select(this).attr('r', 8);
@@ -1286,6 +1339,11 @@ def main():
     with open(OUTPUT_HTML, 'w') as f:
         f.write(final_html)
     print(f"Saved exact replica visualization to {OUTPUT_HTML}")
+
+    # Also save to data.json for the main app
+    with open(OUTPUT_JSON, 'w') as f:
+        json.dump(json_data, f)
+    print(f"Saved merged data to {OUTPUT_JSON}")
 
 if __name__ == '__main__':
     main()
