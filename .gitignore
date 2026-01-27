@@ -1,0 +1,9 @@
+data/
+*.xlsx
+*.TXT
+*.csv
+__pycache__/
+.DS_Store
+inspect_*.py
+check_*.py
+all_countries_ternary_charts.html
