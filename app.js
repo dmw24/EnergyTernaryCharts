@@ -1,37 +1,38 @@
-// Configuration
-const COUNTRY_CONFIG = {
-    "United States": { "color": "#2563eb", "short": "USA" },
-    "China": { "color": "#dc2626", "short": "CHN" },
-    "Germany": { "color": "#d97706", "short": "DEU" },
-    "United Kingdom": { "color": "#7c3aed", "short": "GBR" },
-    "Japan": { "color": "#db2777", "short": "JPN" },
-    "France": { "color": "#0891b2", "short": "FRA" },
-    "India": { "color": "#ea580c", "short": "IND" },
-    "Brazil": { "color": "#16a34a", "short": "BRA" },
-    "Australia": { "color": "#0d9488", "short": "AUS" },
-    "Canada": { "color": "#9333ea", "short": "CAN" },
-    "Italy": { "color": "#65a30d", "short": "ITA" },
-    "Poland": { "color": "#dc2626", "short": "POL" },
-    "South Africa": { "color": "#e11d48", "short": "ZAF" },
-    "Nigeria": { "color": "#ca8a04", "short": "NGA" },
-    "World": { "color": "#000000", "short": "WLD" },
+// Regions (aggregates)
+const REGIONS_CONFIG = {
     "Asia (Total)": { "color": "#fca5a5", "short": "ASI" },
-    "Other Asia": { "color": "#fda4af", "short": "ASO" },
+    "Europe": { "color": "#3b82f6", "short": "EUR" },
     "Former Soviet Union": { "color": "#818cf8", "short": "FSU" },
-    "OECD (1990 Members)": { "color": "#34d399", "short": "O90" },
-    "Eastern Europe & FSU": { "color": "#a78bfa", "short": "EEF" },
     "Latin America & Caribbean": { "color": "#fbbf24", "short": "LAC" },
     "Middle East & Africa": { "color": "#f472b6", "short": "MEA" },
-    "Rest of Latin America": { "color": "#fcd34d", "short": "RLA" },
-    "Rest of MEA": { "color": "#f9a8d4", "short": "RME" },
-    "Rest of EE / FSU": { "color": "#c4b5fd", "short": "REF" },
-    "Rest of OECD (1990)": { "color": "#6ee7b7", "short": "RO9" },
-    "Europe": { "color": "#3b82f6", "short": "EUR" }
+    "North America": { "color": "#7c3aed", "short": "NAM" },
+    "OECD (1990 Members)": { "color": "#34d399", "short": "O90" },
+    "World": { "color": "#000000", "short": "WLD" }
 };
+
+// Countries
+const COUNTRIES_CONFIG = {
+    "Australia": { "color": "#0d9488", "short": "AUS" },
+    "Brazil": { "color": "#16a34a", "short": "BRA" },
+    "Canada": { "color": "#9333ea", "short": "CAN" },
+    "China": { "color": "#dc2626", "short": "CHN" },
+    "France": { "color": "#0891b2", "short": "FRA" },
+    "Germany": { "color": "#d97706", "short": "DEU" },
+    "India": { "color": "#ea580c", "short": "IND" },
+    "Italy": { "color": "#65a30d", "short": "ITA" },
+    "Japan": { "color": "#db2777", "short": "JPN" },
+    "Nigeria": { "color": "#ca8a04", "short": "NGA" },
+    "Poland": { "color": "#dc2626", "short": "POL" },
+    "South Africa": { "color": "#e11d48", "short": "ZAF" },
+    "United States": { "color": "#2563eb", "short": "USA" }
+};
+
+// Combined config for backwards compatibility
+const COUNTRY_CONFIG = { ...REGIONS_CONFIG, ...COUNTRIES_CONFIG };
 
 // State
 let RAW_DATA = {};
-let selectedCountries = new Set(['United States', 'China', 'Germany', 'India', 'Brazil', 'World']);
+let selectedCountries = new Set(['United States', 'China', 'Germany', 'India', 'Brazil', 'World', 'Europe']);
 let currentYear = 2023;
 let isPlaying = false;
 let playInterval = null;
@@ -495,8 +496,8 @@ function updateChart() {
             }
 
             tooltip.style('opacity', 1)
-                .style('left', (event.offsetX + 20) + 'px')
-                .style('top', (event.offsetY - 20) + 'px')
+                .style('left', (event.pageX - 20) + 'px')
+                .style('top', (event.pageY - 20) + 'px')
                 .html(`
                     <div class="tooltip-title">${d.country} (${d.year})</div>
                     <div class="tooltip-row"><span class="tooltip-label">${labels.elec}</span><span class="tooltip-value">${(d.elec * 100).toFixed(1)}%</span></div>
@@ -508,8 +509,8 @@ function updateChart() {
         })
         .on('mousemove', function (event) {
             d3.select('#tooltip')
-                .style('left', (event.offsetX + 20) + 'px')
-                .style('top', (event.offsetY - 20) + 'px');
+                .style('left', (event.pageX - 20) + 'px')
+                .style('top', (event.pageY - 20) + 'px');
         })
         .on('mouseout', function () {
             d3.select('#tooltip').style('opacity', 0);
@@ -518,7 +519,7 @@ function updateChart() {
         });
 
     let sources = new Set(currentData.map(d => d.source));
-    document.getElementById('data-source-label').innerText = "Source: " + Array.from(sources).join(' & ');
+    document.getElementById('data-source-label').innerText = "Source: IIASA, IEA, Electrotech Revolution team analysis";
 }
 
 function setSmoothingMode(smooth) {
@@ -532,7 +533,13 @@ function setEnergyMode(mode) {
     energyMode = mode;
     document.getElementById('btn-final').classList.toggle('active', mode === 'final');
     document.getElementById('btn-useful').classList.toggle('active', mode === 'useful');
-    document.getElementById('btn-power').classList.toggle('active', mode === 'power');
+
+    // Update header text based on mode
+    const modeLabel = mode.charAt(0).toUpperCase() + mode.slice(1);
+    const labelElement = document.getElementById('energy-type-label');
+    if (labelElement) {
+        labelElement.innerText = modeLabel;
+    }
 
     const slider = document.getElementById('year-slider');
     if (mode === 'power') {
@@ -556,33 +563,89 @@ function setEnergyMode(mode) {
 }
 
 function renderList() {
-    const container = document.getElementById('regions-list');
-    container.innerHTML = '';
-    Object.keys(COUNTRY_CONFIG).sort().forEach(country => {
+    const regionsContainer = document.getElementById('regions-list');
+    const countriesContainer = document.getElementById('countries-list');
+
+    // Render Regions
+    regionsContainer.innerHTML = '';
+    Object.keys(REGIONS_CONFIG).sort().forEach(region => {
+        const item = document.createElement('div');
+        item.className = 'region-item ' + (selectedCountries.has(region) ? 'active' : '');
+        item.innerHTML = `
+            <div class="color-dot" style="background:${REGIONS_CONFIG[region].color}"></div>
+            <span>${region}</span>
+        `;
+        item.onclick = () => {
+            if (selectedCountries.has(region)) selectedCountries.delete(region);
+            else selectedCountries.add(region);
+            renderList(); updateChart(); renderLegend();
+        };
+        regionsContainer.appendChild(item);
+    });
+
+    // Render Countries
+    countriesContainer.innerHTML = '';
+    Object.keys(COUNTRIES_CONFIG).sort().forEach(country => {
         const item = document.createElement('div');
         item.className = 'region-item ' + (selectedCountries.has(country) ? 'active' : '');
         item.innerHTML = `
-            <div class="color-dot" style="background:${COUNTRY_CONFIG[country].color}"></div>
+            <div class="color-dot" style="background:${COUNTRIES_CONFIG[country].color}"></div>
             <span>${country}</span>
         `;
         item.onclick = () => {
             if (selectedCountries.has(country)) selectedCountries.delete(country);
             else selectedCountries.add(country);
-            renderList(); updateChart();
+            renderList(); updateChart(); renderLegend();
         };
-        container.appendChild(item);
+        countriesContainer.appendChild(item);
     });
+}
+
+function renderLegend() {
+    const legendContainer = document.getElementById('chart-legend');
+    if (!legendContainer) return;
+
+    legendContainer.innerHTML = '';
+
+    // Sort selected countries/regions: Regions first, then Countries, both alphabetical
+    const sortedSelection = Array.from(selectedCountries).sort((a, b) => {
+        const isARegion = a in REGIONS_CONFIG;
+        const isBRegion = b in REGIONS_CONFIG;
+        if (isARegion && !isBRegion) return -1;
+        if (!isARegion && isBRegion) return 1;
+        return a.localeCompare(b);
+    });
+
+    sortedSelection.forEach(item => {
+        const config = COUNTRY_CONFIG[item];
+        if (!config) return;
+
+        const legendItem = document.createElement('div');
+        legendItem.className = 'legend-item';
+        legendItem.innerHTML = `
+            <div class="color-dot" style="background:${config.color}"></div>
+            <span>${item}</span>
+        `;
+        legendContainer.appendChild(legendItem);
+    });
+
+    legendContainer.style.display = sortedSelection.length > 0 ? 'flex' : 'none';
 }
 
 function toggleAll() {
     if (selectedCountries.size === Object.keys(COUNTRY_CONFIG).length) selectedCountries.clear();
     else selectedCountries = new Set(Object.keys(COUNTRY_CONFIG));
-    renderList(); updateChart();
+    renderList(); updateChart(); renderLegend();
 }
 
 function updateUI() {
     document.getElementById('year-display').innerText = currentYear;
     document.getElementById('year-slider').value = currentYear;
+
+    // Update dynamic title range
+    const startYear = energyMode === 'power' ? 1985 : 1900;
+    document.getElementById('chart-title-range').innerText = `(${startYear} – ${currentYear})`;
+
     updateChart();
 }
 
@@ -627,7 +690,35 @@ async function init() {
     // Draw and render
     drawTriangle();
     renderList();
+    renderLegend();
     updateUI();
+
+    // Setup custom tooltips for elements with data-tooltip
+    document.addEventListener('mouseover', (e) => {
+        const target = e.target.closest('[data-tooltip]');
+        if (target) {
+            const tooltip = d3.select('#tooltip');
+            tooltip.style('opacity', 1)
+                .style('left', (e.pageX - 10) + 'px')
+                .style('top', (e.pageY - 10) + 'px')
+                .html(`<div style="max-width: 200px;">${target.getAttribute('data-tooltip')}</div>`);
+        }
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        const target = e.target.closest('[data-tooltip]');
+        if (target) {
+            d3.select('#tooltip')
+                .style('left', (e.pageX - 10) + 'px')
+                .style('top', (e.pageY - 10) + 'px');
+        }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+        if (e.target.closest('[data-tooltip]')) {
+            d3.select('#tooltip').style('opacity', 0);
+        }
+    });
 }
 
 // Start the app

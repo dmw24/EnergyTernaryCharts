@@ -54,10 +54,17 @@ REGION_CONFIG = {
                     'iea_calc': (['MIDEAST', 'AFRICA'], ['SOUTHAFRIC', 'NIGERIA'])},
     'Rest of EE / FSU': {'color': '#c4b5fd', 'short': 'REF', 'iiasa': 'REFother', 
                          'iea_calc': ('NOECDTOT', ['EURASIA'])}, # NOECDTOT includes FSU(EURASIA) + East Europe. So Sub FSU gives East Eur.
-    'Rest of OECD (1990)': {'color': '#6ee7b7', 'short': 'RO9', 'iiasa': 'O90other', 
-                            'iea_calc': ('OECDTOT', ['USA', 'GERMANY', 'UK', 'JAPAN', 'FRANCE', 'AUSTRALI', 'CANADA', 'ITALY'])},
-    'Europe': {'color': '#3b82f6', 'short': 'EUR', 'iea': 'EUROPE_UN', 'ember': 'Europe',
-               'iiasa_calc': (['Germany', 'France', 'United Kingdom', 'Italy', 'Poland'], [])},
+    'Rest of OECD (1990)': {'color': '#6ee7b7', 'short': 'RO9', 'iea': 'O90other', 
+                            'iea_calc': ('OECDTOT', ['USA', 'GERMANY', 'UK', 'JAPAN', 'FRANCE', 'AUSTRALI', 'CANADA', 'ITALY']),
+                            'iiasa_calc': (['OECD-90'], ['United States', 'Germany', 'United Kingdom', 'Japan', 'France', 'Australia', 'Canada', 'Italy'])},
+    'Europe': {'color': '#3b82f6', 'short': 'EUR', 'ember': 'Europe',
+               'iea_calc': (['AUSTRIA', 'BELGIUM', 'DENMARK', 'FINLAND', 'FRANCE', 'GERMANY', 'GREECE', 'ICELAND', 'IRELAND', 'ITALY', 'LUXEMBOURG', 'NETHERLANDS', 'NORWAY', 'PORTUGAL', 'SPAIN', 'SWEDEN', 'SWITZERLAND', 'TURKIYE', 'UK'], []),
+               'iiasa_calc': (['OECD-90'], ['United States', 'Canada', 'Japan', 'Australia']),
+               'ember_calc': (['OECD'], ['United States of America', 'Canada', 'Japan', 'Australia'])},
+    'North America': {'color': '#7c3aed', 'short': 'NAM',
+                     'iea_calc': (['USA', 'CANADA'], []),
+                     'iiasa_calc': (['United States', 'Canada'], []),
+                     'ember_calc': (['United States of America', 'Canada'], [])},
 }
 
 # Inverse mappings
@@ -71,8 +78,9 @@ for v in REGION_CONFIG.values():
     if 'iea' in v: IEA_CODES_TO_LOAD.add(v['iea'])
     if 'iea_calc' in v:
         pos, neg = v['iea_calc']
-        if isinstance(pos, str): IEA_CODES_TO_LOAD.add(pos)
-        else: IEA_CODES_TO_LOAD.update(pos)
+        if isinstance(pos, str): pos_list = [pos]
+        else: pos_list = pos
+        IEA_CODES_TO_LOAD.update(pos_list)
         IEA_CODES_TO_LOAD.update(neg)
 
 # IIASA fuel classification
@@ -356,6 +364,7 @@ def main():
             display_name = IIASA_TO_DISPLAY[region]
             fuel = row['Fuel']
             
+
             # Identify Category
             cat = None
             if fuel in IIASA_ELECTRONS: cat = 'electrons'
@@ -363,6 +372,7 @@ def main():
             elif fuel in IIASA_TOTAL: cat = 'total'
             else: continue
             
+
             # Determine Flow Type
             target_dict = None
             if row['Type'] == 'Final Energy': target_dict = iiasa_final
@@ -376,7 +386,10 @@ def main():
                         value = float(val)
                         if cat not in target_dict[display_name][year]: target_dict[display_name][year][cat] = 0
                         target_dict[display_name][year][cat] += value
+
                     except ValueError: pass
+    
+
 
     # Calculate Bio Residuals for Useful Energy Ratios
     for region_dict in [iiasa_final, iiasa_useful]:
@@ -394,12 +407,21 @@ def main():
     ember_data = defaultdict(lambda: defaultdict(dict))
     
     # Map for Ember Areas
-    EMBER_MAP = {v.get('ember', k): k for k, v in REGION_CONFIG.items()}
+    EMBER_MAP = {v.get('ember', k): k for k, v in REGION_CONFIG.items() if 'ember' in v or 'ember_calc' not in v}
     
+    # Calculate codes to load for Ember
+    EMBER_CODES_TO_LOAD = set()
+    for v in REGION_CONFIG.values():
+        if 'ember' in v: EMBER_CODES_TO_LOAD.add(v['ember'])
+        if 'ember_calc' in v:
+            pos, neg = v['ember_calc']
+            EMBER_CODES_TO_LOAD.update(pos)
+            EMBER_CODES_TO_LOAD.update(neg)
+
     # Filter Relevant Rows (Category=Electricity generation)
     gen_df = ember_raw[
         (ember_raw['Category'] == 'Electricity generation') & 
-        (ember_raw['Area'].isin(EMBER_MAP.keys()))
+        (ember_raw['Area'].isin(EMBER_CODES_TO_LOAD))
     ]
     
     # Pivot to get variables as columns: Year, Area, Variable -> Value
@@ -408,22 +430,18 @@ def main():
     
     # We'll group by Area, Year, Variable and sum Value (just in case there are dupes, though likely unique)
     pivoted = gen_df.pivot_table(index=['Area', 'Year'], columns='Variable', values='Value', aggfunc='sum').reset_index()
+
+    # First, collect all raw data by area
+    raw_ember_by_area = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
     
     for _, row in pivoted.iterrows():
         area = row['Area']
         year = int(row['Year'])
-        country_key = EMBER_MAP[area]
         
-        # Helper to get value
         def get_val(col_name):
             val = row.get(col_name, 0)
             return 0 if pd.isna(val) else val
 
-        # Atomic components mapping
-        # Fossil = Coal + Gas + Other Fossil
-        # Wind & Solar = Wind + Solar
-        # Other = Hydro + Bioenergy + Nuclear + Other Renewables
-        
         coal = get_val('Coal')
         gas = get_val('Gas')
         other_fossil = get_val('Other Fossil')
@@ -439,20 +457,63 @@ def main():
         other_ren = get_val('Other Renewables')
         other_sum = hydro + bio + nuc + other_ren
         
-        # Calculate strict total from components
         total_calc = fossil_sum + ws_sum + other_sum
         
         if total_calc > 0:
-             ember_data[country_key][year] = {
-                 'fossil': fossil_sum,
-                 'wind_solar': ws_sum,
-                 'other': other_sum,
-                 'total': total_calc,
-                 'fossil_pct': round(fossil_sum / total_calc * 100, 2),
-                 'wind_solar_pct': round(ws_sum / total_calc * 100, 2),
-                 'other_pct': round(other_sum / total_calc * 100, 2),
-                 'source': 'Ember'
-             }
+            raw_ember_by_area[area][year] = {
+                'fossil': fossil_sum,
+                'wind_solar': ws_sum,
+                'other': other_sum,
+                'total': total_calc,
+                'fossil_pct': round(fossil_sum / total_calc * 100, 2),
+                'wind_solar_pct': round(ws_sum / total_calc * 100, 2),
+                'other_pct': round(other_sum / total_calc * 100, 2),
+                'source': 'Ember'
+            }
+
+    # Now apply mappings and calculations
+    for country_key, config in REGION_CONFIG.items():
+        if 'ember_calc' in config:
+            pos_codes, neg_codes = config['ember_calc']
+            
+            all_years = set()
+            for code in pos_codes + neg_codes:
+                if code in raw_ember_by_area:
+                    all_years.update(raw_ember_by_area[code].keys())
+            
+            for year in all_years:
+                res = {'fossil': 0, 'wind_solar': 0, 'other': 0, 'total': 0}
+                for code in pos_codes:
+                    if code in raw_ember_by_area and year in raw_ember_by_area[code]:
+                        for c in ['fossil', 'wind_solar', 'other', 'total']: 
+                            res[c] += raw_ember_by_area[code][year].get(c, 0)
+                for code in neg_codes:
+                    if code in raw_ember_by_area and year in raw_ember_by_area[code]:
+                        for c in ['fossil', 'wind_solar', 'other', 'total']: 
+                            res[c] -= raw_ember_by_area[code][year].get(c, 0)
+                
+                for c in res: res[c] = max(0, res[c])
+                
+                if res['total'] > 0:
+                    ember_data[country_key][year] = {
+                        'fossil': res['fossil'],
+                        'wind_solar': res['wind_solar'],
+                        'other': res['other'],
+                        'total': res['total'],
+                        'fossil_pct': round(res['fossil'] / res['total'] * 100, 2),
+                        'wind_solar_pct': round(res['wind_solar'] / res['total'] * 100, 2),
+                        'other_pct': round(res['other'] / res['total'] * 100, 2),
+                        'source': 'Ember (Calc)'
+                    }
+        elif 'ember' in config:
+            code = config['ember']
+            if code in raw_ember_by_area:
+                for year, data in raw_ember_by_area[code].items():
+                    ember_data[country_key][year] = data
+        elif country_key in raw_ember_by_area:
+            # Fallback to direct name match if no explicit ember code
+            for year, data in raw_ember_by_area[country_key].items():
+                ember_data[country_key][year] = data
              
     # Load NEW Extended Ember Data (1985 onwards)
     print(f"Reading {NEW_EMBER_FILE}...")
@@ -621,7 +682,19 @@ def main():
             # If map has function (dict), use it. Else default 1.0
             factor = 1.0
             if c in eff_factors_map and cat in eff_factors_map[c]:
-                factor = eff_factors_map[c][cat].get(y, 1.0)
+                factor_dict = eff_factors_map[c][cat]
+                if isinstance(factor_dict, dict):
+                    factor = factor_dict.get(y, 1.0)
+                else:
+                    factor = 1.0
+            
+            # For calculated regions without their own factors, use OECD-90 as proxy
+            if factor == 1.0 and c in IIASA_CALC_REGIONS:
+                # Use OECD-90 factors as a reasonable proxy for calculated regions
+                if 'OECD (1990 Members)' in eff_factors_map and cat in eff_factors_map['OECD (1990 Members)']:
+                    proxy_dict = eff_factors_map['OECD (1990 Members)'][cat]
+                    if isinstance(proxy_dict, dict):
+                        factor = proxy_dict.get(y, 1.0)
             
             # Apply
             useful_val = final_val * factor

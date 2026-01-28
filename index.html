@@ -7,31 +7,52 @@
     <title>Global Energy Transition - Ternary Chart</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div class="top-banner">
+        <div class="banner-left">
+            <img src="logo.png" alt="Logo" class="banner-logo">
+            <div class="banner-text">
+                <div class="banner-title">A Three-Way View of Energy History</div>
+                <div class="banner-subtitle">Deep dive tool</div>
+            </div>
+        </div>
+        <a href="https://www.electrotech-revolution.com/" target="_blank" class="back-link">
+            <img src="home_icon.png" alt="Home" class="back-link-icon-img">
+            To home page
+        </a>
+    </div>
     <div class="layout">
         <main class="main-content">
             <header class="header">
-                <h1>A Ternary View of Energy History</h1>
-                <div class="subtitle">Historical Energy Mix Trajectories (1900 – 2023)</div>
+
+                <div class="subtitle">Historical <span id="energy-type-label">Final</span> Energy Mix Trajectories <span
+                        id="chart-title-range">(1900 –
+                        2023)</span>, %</div>
 
             </header>
 
             <div id="viz-container">
-                <div id="tooltip" class="tooltip"></div>
             </div>
-            <div class="subtitle" style="font-size:11px; opacity:0.8;">Source: IIASA, IEA, Ember analysis
+            <div id="chart-legend" class="chart-legend"></div>
+            <div id="data-source-label" class="subtitle" style="font-size:11px; opacity:0.8;">Source: IIASA, IEA,
+                Electrotech Revolution team
+                analysis
             </div>
         </main>
 
         <aside class="sidebar">
             <div class="section-label">Energy Type</div>
-            <div class="toggle-group">
-                <div class="toggle-btn active" id="btn-final" onclick="setEnergyMode('final')">Final</div>
-                <div class="toggle-btn" id="btn-useful" onclick="setEnergyMode('useful')">Useful</div>
-                <div class="toggle-btn" id="btn-power" onclick="setEnergyMode('power')">Power Generation</div>
+            <div class="toggle-group energy-toggle">
+                <div class="toggle-btn active" id="btn-final" onclick="setEnergyMode('final')"
+                    data-tooltip="Energy as delivered to the consumer (e.g., electricity at the socket, fuel at the pump)">
+                    Final Energy Demand</div>
+                <div class="toggle-btn" id="btn-useful" onclick="setEnergyMode('useful')"
+                    data-tooltip="Energy actually providing the service (e.g., light, heat, motion) after end-use conversion losses">
+                    Useful Energy Demand</div>
             </div>
 
             <div class="section-label">Trailing Line</div>
@@ -46,6 +67,13 @@
                     <span class="select-all-btn" onclick="toggleAll()">SELECT ALL</span>
                 </div>
                 <div class="regions-list" id="regions-list"></div>
+            </div>
+
+            <div class="regions-wrapper">
+                <div class="section-label">
+                    <span>Countries</span>
+                </div>
+                <div class="regions-list" id="countries-list"></div>
             </div>
 
             <div class="playback-controls">
@@ -71,7 +99,8 @@
         </aside>
     </div>
 
-    <script src="app.js"></script>
+    <div id="tooltip" class="tooltip"></div>
+    <script src="app.js?v=2"></script>
 </body>
 
 </html>
