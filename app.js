@@ -496,21 +496,19 @@ function updateChart() {
             }
 
             tooltip.style('opacity', 1)
-                .style('left', (event.pageX - 20) + 'px')
-                .style('top', (event.pageY - 20) + 'px')
                 .html(`
                     <div class="tooltip-title">${d.country} (${d.year})</div>
                     <div class="tooltip-row"><span class="tooltip-label">${labels.elec}</span><span class="tooltip-value">${(d.elec * 100).toFixed(1)}%</span></div>
                     <div class="tooltip-row"><span class="tooltip-label">${labels.foss}</span><span class="tooltip-value">${(d.foss * 100).toFixed(1)}%</span></div>
                     <div class="tooltip-row"><span class="tooltip-label">${labels.bio}</span><span class="tooltip-value">${(d.bio * 100).toFixed(1)}%</span></div>
                 `);
+
+            positionTooltip(event);
             d3.selectAll('.year-trail').classed('dimmed', true);
             d3.select(this).attr('r', 8);
         })
         .on('mousemove', function (event) {
-            d3.select('#tooltip')
-                .style('left', (event.pageX - 20) + 'px')
-                .style('top', (event.pageY - 20) + 'px');
+            positionTooltip(event);
         })
         .on('mouseout', function () {
             d3.select('#tooltip').style('opacity', 0);
@@ -520,6 +518,32 @@ function updateChart() {
 
     let sources = new Set(currentData.map(d => d.source));
     document.getElementById('data-source-label').innerText = "Source: IIASA, IEA, Electrotech Revolution team analysis";
+}
+
+function positionTooltip(event) {
+    const tooltip = document.getElementById('tooltip');
+    const tooltipRect = tooltip.getBoundingClientRect();
+    const padding = 10;
+
+    let x = event.pageX + padding;
+    let y = event.pageY + padding;
+
+    // Check if tooltip goes off right edge
+    if (x + tooltipRect.width > window.innerWidth) {
+        x = event.pageX - tooltipRect.width - padding;
+    }
+
+    // Check if tooltip goes off bottom edge
+    if (y + tooltipRect.height > window.innerHeight) {
+        y = event.pageY - tooltipRect.height - padding;
+    }
+
+    // Safety check for top/left
+    x = Math.max(padding, x);
+    y = Math.max(padding, y);
+
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
 }
 
 function setSmoothingMode(smooth) {
@@ -699,18 +723,15 @@ async function init() {
         if (target) {
             const tooltip = d3.select('#tooltip');
             tooltip.style('opacity', 1)
-                .style('left', (e.pageX - 10) + 'px')
-                .style('top', (e.pageY - 10) + 'px')
                 .html(`<div style="max-width: 200px;">${target.getAttribute('data-tooltip')}</div>`);
+            positionTooltip(e);
         }
     });
 
     document.addEventListener('mousemove', (e) => {
         const target = e.target.closest('[data-tooltip]');
         if (target) {
-            d3.select('#tooltip')
-                .style('left', (e.pageX - 10) + 'px')
-                .style('top', (e.pageY - 10) + 'px');
+            positionTooltip(e);
         }
     });
 
