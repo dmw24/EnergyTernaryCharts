@@ -53,7 +53,20 @@
                 <div class="toggle-btn" id="btn-smooth" onclick="setSmoothingMode(true)">5-Year Average</div>
             </div>
 
-            <!-- Regions and Countries lists removed for UK-only version -->
+            <div class="regions-wrapper">
+                <div class="section-label">
+                    <span>Regions</span>
+                    <span class="select-all-btn" onclick="toggleAll()">SELECT ALL</span>
+                </div>
+                <div class="regions-list" id="regions-list"></div>
+            </div>
+
+            <div class="regions-wrapper">
+                <div class="section-label">
+                    <span>Countries</span>
+                </div>
+                <div class="regions-list" id="countries-list"></div>
+            </div>
 
             <div class="playback-controls">
                 <div class="top-controls">
@@ -66,14 +79,14 @@
                             <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
                         </svg>
                     </button>
-                    <div class="current-year" id="year-display">2010</div>
+                    <div class="current-year" id="year-display">2023</div>
                     <div class="speed-selector">
                         <button class="speed-btn active" onclick="setSpeed(1)">1x</button>
                         <button class="speed-btn" onclick="setSpeed(2)">2x</button>
                         <button class="speed-btn" onclick="setSpeed(5)">5x</button>
                     </div>
                 </div>
-                <input type="range" id="year-slider" min="1700" max="2010" value="2010" step="1">
+                <input type="range" id="year-slider" min="1700" max="2023" value="2023" step="1">
             </div>
         </aside>
     </div>
