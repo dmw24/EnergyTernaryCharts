@@ -41,13 +41,13 @@ def process_uk_data():
         if total == 0: continue
         
         # Mapping to the tool's categories:
-        # Electrons: electricity, wind
+        # Electrons: electricity
         # Fossil: gas, oil, coal
-        # Bio & other: wood, fodder
+        # Bio & other: wood, fodder, wind (mechanical wind)
         
-        electrons = row['electricity'] + row['wind']
+        electrons = row['electricity']
         fossil = row['gas'] + row['oil'] + row['coal']
-        bio_other = row['wood'] + row['fodder']
+        bio_other = row['wood'] + row['fodder'] + row['wind']
         
         # Recalculate total from these components to ensure percentages sum to 100
         sum_components = electrons + fossil + bio_other
