@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Energy Transition - Ternary Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-banner">
+        <div class="banner-left">
+            <img src="logo.png" alt="Logo" class="banner-logo">
+            <div class="banner-text">
+                <div class="banner-title">UK Energy History (since 1700)</div>
+                <div class="banner-subtitle">Ternary View</div>
+            </div>
+        </div>
+        <a href="https://www.electrotech-revolution.com/" target="_blank" class="back-link">
+            <img src="home_icon.png" alt="Home" class="back-link-icon-img">
+            To home page
+        </a>
+    </div>
+    <div class="layout">
+        <main class="main-content">
+            <header class="header">
+
+                <div class="subtitle">Historical <span id="energy-type-label">Final</span> Energy Mix Trajectories <span
+                        id="chart-title-range">(1700 –
+                        2010)</span>, %</div>
+
+            </header>
+
+            <div id="viz-container">
+            </div>
+            <div id="chart-legend" class="chart-legend"></div>
+            <div id="data-source-label" class="subtitle" style="font-size:11px; opacity:0.8;">Source: IIASA, IEA,
+                Electrotech Revolution team
+                analysis
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <!-- Energy Type toggle removed as only Final is available for UK historical data -->
+
+            <div class="section-label">Trailing Line</div>
+            <div class="toggle-group">
+                <div class="toggle-btn active" id="btn-annual" onclick="setSmoothingMode(false)">Annual</div>
+                <div class="toggle-btn" id="btn-smooth" onclick="setSmoothingMode(true)">5-Year Average</div>
+            </div>
+
+            <!-- Regions and Countries lists removed for UK-only version -->
+
+            <div class="playback-controls">
+                <div class="top-controls">
+                    <button class="play-pause" id="play-pause-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" id="play-icon">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" id="pause-icon"
+                            style="display:none;">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                        </svg>
+                    </button>
+                    <div class="current-year" id="year-display">2010</div>
+                    <div class="speed-selector">
+                        <button class="speed-btn active" onclick="setSpeed(1)">1x</button>
+                        <button class="speed-btn" onclick="setSpeed(2)">2x</button>
+                        <button class="speed-btn" onclick="setSpeed(5)">5x</button>
+                    </div>
+                </div>
+                <input type="range" id="year-slider" min="1700" max="2010" value="2010" step="1">
+            </div>
+        </aside>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+    <script src="app.js?v=2"></script>
+</body>
+
+</html>

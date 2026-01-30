@@ -1,0 +1,2803 @@
+{
+    "United Kingdom": {
+        "1700": {
+            "final": {
+                "electrons_pct": 1.263364739467614,
+                "fossil_pct": 59.928121442748285,
+                "bio_pct": 38.8085138177841,
+                "total": 2.692804547574538,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1701": {
+            "final": {
+                "electrons_pct": 1.2518371233438177,
+                "fossil_pct": 60.25559559104072,
+                "bio_pct": 38.492567285615465,
+                "total": 2.7110859270062737,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1702": {
+            "final": {
+                "electrons_pct": 1.2406050959018338,
+                "fossil_pct": 60.53772349469545,
+                "bio_pct": 38.22167140940272,
+                "total": 2.7290607609959396,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1703": {
+            "final": {
+                "electrons_pct": 1.23990493597683,
+                "fossil_pct": 60.82195825948071,
+                "bio_pct": 37.93813680454245,
+                "total": 2.7473581788274646,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1704": {
+            "final": {
+                "electrons_pct": 1.238720326867625,
+                "fossil_pct": 61.11145152800405,
+                "bio_pct": 37.64982814512833,
+                "total": 2.766798685523375,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1705": {
+            "final": {
+                "electrons_pct": 1.2380568669198524,
+                "fossil_pct": 61.42102849368918,
+                "bio_pct": 37.34091463939095,
+                "total": 2.785144880100853,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1706": {
+            "final": {
+                "electrons_pct": 1.2371336865480944,
+                "fossil_pct": 61.712242825088225,
+                "bio_pct": 37.05062348836368,
+                "total": 2.8041411946706325,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1707": {
+            "final": {
+                "electrons_pct": 1.2364281402875206,
+                "fossil_pct": 62.00889750310109,
+                "bio_pct": 36.754674356611396,
+                "total": 2.8227113954769734,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1708": {
+            "final": {
+                "electrons_pct": 1.2359350094399246,
+                "fossil_pct": 62.310975507450415,
+                "bio_pct": 36.45308948310966,
+                "total": 2.840857480451763,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1709": {
+            "final": {
+                "electrons_pct": 1.2349698663346278,
+                "fossil_pct": 62.61717289040038,
+                "bio_pct": 36.147857243264994,
+                "total": 2.860154370658147,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1710": {
+            "final": {
+                "electrons_pct": 1.234148051770569,
+                "fossil_pct": 62.89202305728705,
+                "bio_pct": 35.87382889094238,
+                "total": 2.8791912105834965,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1711": {
+            "final": {
+                "electrons_pct": 1.2332377784498876,
+                "fossil_pct": 63.157203726720354,
+                "bio_pct": 35.609558494829756,
+                "total": 2.8985060845327832,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1712": {
+            "final": {
+                "electrons_pct": 1.232534819659172,
+                "fossil_pct": 63.42793568920874,
+                "bio_pct": 35.33952949113209,
+                "total": 2.9174040831519292,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1713": {
+            "final": {
+                "electrons_pct": 1.2319793551860727,
+                "fossil_pct": 63.70134375894207,
+                "bio_pct": 35.066676885871864,
+                "total": 2.9360180933539803,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1714": {
+            "final": {
+                "electrons_pct": 1.2312314568353382,
+                "fossil_pct": 63.95993790422008,
+                "bio_pct": 34.808830638944585,
+                "total": 2.9551572956790597,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1715": {
+            "final": {
+                "electrons_pct": 1.2287272427591764,
+                "fossil_pct": 64.15703696994156,
+                "bio_pct": 34.614235787299265,
+                "total": 2.9786184968294185,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1716": {
+            "final": {
+                "electrons_pct": 1.2259678256546653,
+                "fossil_pct": 64.30174700047182,
+                "bio_pct": 34.472285173873516,
+                "total": 3.0028484970075806,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1717": {
+            "final": {
+                "electrons_pct": 1.223324886383677,
+                "fossil_pct": 64.44706800861407,
+                "bio_pct": 34.329607105002246,
+                "total": 3.026948341962097,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1718": {
+            "final": {
+                "electrons_pct": 1.2203738709684533,
+                "fossil_pct": 64.57038058117966,
+                "bio_pct": 34.20924554785188,
+                "total": 3.0519723005213897,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1719": {
+            "final": {
+                "electrons_pct": 1.2184964322157945,
+                "fossil_pct": 64.74512483267668,
+                "bio_pct": 34.03637873510753,
+                "total": 3.0744566605934356,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1720": {
+            "final": {
+                "electrons_pct": 1.2158319651229659,
+                "fossil_pct": 64.90967660976546,
+                "bio_pct": 33.87449142511158,
+                "total": 3.0990661604314766,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1721": {
+            "final": {
+                "electrons_pct": 1.2147556215340078,
+                "fossil_pct": 65.12081803952726,
+                "bio_pct": 33.66442633893873,
+                "total": 3.119751559778315,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1722": {
+            "final": {
+                "electrons_pct": 1.213604491606861,
+                "fossil_pct": 65.32329856822929,
+                "bio_pct": 33.46309694016386,
+                "total": 3.1407196136237117,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1723": {
+            "final": {
+                "electrons_pct": 1.211841191033102,
+                "fossil_pct": 65.49812384390074,
+                "bio_pct": 33.290034965066155,
+                "total": 3.1633778565380553,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1724": {
+            "final": {
+                "electrons_pct": 1.2103205331292215,
+                "fossil_pct": 65.67059171701557,
+                "bio_pct": 33.11908774985521,
+                "total": 3.185517360494093,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1725": {
+            "final": {
+                "electrons_pct": 1.2087041652875432,
+                "fossil_pct": 65.83319882444673,
+                "bio_pct": 32.95809701026573,
+                "total": 3.2080213195707104,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1726": {
+            "final": {
+                "electrons_pct": 1.2073294231358884,
+                "fossil_pct": 66.00423749512747,
+                "bio_pct": 32.78843308173664,
+                "total": 3.2299945401720307,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1727": {
+            "final": {
+                "electrons_pct": 1.2046194051333141,
+                "fossil_pct": 66.19740898231939,
+                "bio_pct": 32.597971612547276,
+                "total": 3.2556789959889736,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1728": {
+            "final": {
+                "electrons_pct": 1.2037060344688904,
+                "fossil_pct": 66.38390499717252,
+                "bio_pct": 32.412388968358584,
+                "total": 3.2766385374924587,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1729": {
+            "final": {
+                "electrons_pct": 1.2028615918555572,
+                "fossil_pct": 66.5698881234298,
+                "bio_pct": 32.22725028471464,
+                "total": 3.2974989283974154,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1730": {
+            "final": {
+                "electrons_pct": 1.202062151834063,
+                "fossil_pct": 66.75440267511178,
+                "bio_pct": 32.04353517305416,
+                "total": 3.3183231853481523,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1731": {
+            "final": {
+                "electrons_pct": 1.200907583510584,
+                "fossil_pct": 66.91507742243529,
+                "bio_pct": 31.884014994054137,
+                "total": 3.340222235419485,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1732": {
+            "final": {
+                "electrons_pct": 1.1997024024401575,
+                "fossil_pct": 67.12742706931003,
+                "bio_pct": 31.672870528249813,
+                "total": 3.3623657552367154,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1733": {
+            "final": {
+                "electrons_pct": 1.1987029974561805,
+                "fossil_pct": 67.28790328625296,
+                "bio_pct": 31.513393716290867,
+                "total": 3.3840341318276432,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1734": {
+            "final": {
+                "electrons_pct": 1.1978330051829422,
+                "fossil_pct": 67.45181614079416,
+                "bio_pct": 31.350350854022896,
+                "total": 3.4054329132947916,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1735": {
+            "final": {
+                "electrons_pct": 1.196612127171215,
+                "fossil_pct": 67.59186530516138,
+                "bio_pct": 31.211522567667394,
+                "total": 3.427930758621567,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1736": {
+            "final": {
+                "electrons_pct": 1.1960389150904776,
+                "fossil_pct": 67.76462508591344,
+                "bio_pct": 31.039335998996094,
+                "total": 3.4486700572855056,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1737": {
+            "final": {
+                "electrons_pct": 1.2209707097792202,
+                "fossil_pct": 67.8941030853116,
+                "bio_pct": 30.884926204909185,
+                "total": 3.471515523897659,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1738": {
+            "final": {
+                "electrons_pct": 1.2460933274795236,
+                "fossil_pct": 67.99004473507631,
+                "bio_pct": 30.763861937444165,
+                "total": 3.4931252654656966,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1739": {
+            "final": {
+                "electrons_pct": 1.2698624507995462,
+                "fossil_pct": 68.07957772742058,
+                "bio_pct": 30.650559821779876,
+                "total": 3.517838688337119,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1740": {
+            "final": {
+                "electrons_pct": 1.2937118849422085,
+                "fossil_pct": 68.1855019533136,
+                "bio_pct": 30.52078616174418,
+                "total": 3.5416356094504726,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1741": {
+            "final": {
+                "electrons_pct": 1.3177048160552813,
+                "fossil_pct": 68.30992014556419,
+                "bio_pct": 30.37237503838052,
+                "total": 3.564393437998437,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1742": {
+            "final": {
+                "electrons_pct": 1.341321756048994,
+                "fossil_pct": 68.42523953583026,
+                "bio_pct": 30.23343870812075,
+                "total": 3.5875524314710225,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1743": {
+            "final": {
+                "electrons_pct": 1.3650309748188594,
+                "fossil_pct": 68.55482849145767,
+                "bio_pct": 30.080140533723466,
+                "total": 3.6098750338574295,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1744": {
+            "final": {
+                "electrons_pct": 1.3882593696868686,
+                "fossil_pct": 68.66951455493141,
+                "bio_pct": 29.942226075381722,
+                "total": 3.6329016564266916,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1745": {
+            "final": {
+                "electrons_pct": 1.411094175901914,
+                "fossil_pct": 68.77392122013948,
+                "bio_pct": 29.814984603958607,
+                "total": 3.6563979203489883,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1746": {
+            "final": {
+                "electrons_pct": 1.4333979209517682,
+                "fossil_pct": 68.86173330903355,
+                "bio_pct": 29.70486877001468,
+                "total": 3.6807166142595764,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1747": {
+            "final": {
+                "electrons_pct": 1.4548472015282925,
+                "fossil_pct": 68.97649341839684,
+                "bio_pct": 29.56865938007486,
+                "total": 3.706673242288356,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1748": {
+            "final": {
+                "electrons_pct": 1.476735808888749,
+                "fossil_pct": 69.06266516970139,
+                "bio_pct": 29.460599021409873,
+                "total": 3.7309727510877044,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1749": {
+            "final": {
+                "electrons_pct": 1.4988687471309614,
+                "fossil_pct": 69.16825233651876,
+                "bio_pct": 29.332878916350268,
+                "total": 3.7541576150732356,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1750": {
+            "final": {
+                "electrons_pct": 1.5208728544761285,
+                "fossil_pct": 69.27537762191396,
+                "bio_pct": 29.203749523609908,
+                "total": 3.7771947780079342,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1751": {
+            "final": {
+                "electrons_pct": 1.5140791803328246,
+                "fossil_pct": 69.72047347441779,
+                "bio_pct": 28.765447345249385,
+                "total": 3.8720537846177945,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1752": {
+            "final": {
+                "electrons_pct": 1.508134243324526,
+                "fossil_pct": 70.16485211003283,
+                "bio_pct": 28.327013646642644,
+                "total": 3.965749850502701,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1753": {
+            "final": {
+                "electrons_pct": 1.5009788431055409,
+                "fossil_pct": 70.63098031160293,
+                "bio_pct": 27.868040845291524,
+                "total": 4.063680892390676,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1754": {
+            "final": {
+                "electrons_pct": 1.4957194578051134,
+                "fossil_pct": 71.03276907279937,
+                "bio_pct": 27.471511469395526,
+                "total": 4.15749651256666,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1755": {
+            "final": {
+                "electrons_pct": 1.4876718198469345,
+                "fossil_pct": 71.45702238322414,
+                "bio_pct": 27.05530579692892,
+                "total": 4.260170838954772,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1756": {
+            "final": {
+                "electrons_pct": 1.483324689286471,
+                "fossil_pct": 71.83388138779061,
+                "bio_pct": 26.68279392292292,
+                "total": 4.353306455722011,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1757": {
+            "final": {
+                "electrons_pct": 1.4738924391994666,
+                "fossil_pct": 72.27268338760092,
+                "bio_pct": 26.253424173199598,
+                "total": 4.46256845458487,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1758": {
+            "final": {
+                "electrons_pct": 1.4618325886695986,
+                "fossil_pct": 72.77808650079601,
+                "bio_pct": 25.760080910534413,
+                "total": 4.581699753567511,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1759": {
+            "final": {
+                "electrons_pct": 1.4551423107173869,
+                "fossil_pct": 73.14798105675773,
+                "bio_pct": 25.39687663252488,
+                "total": 4.685705531618721,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1760": {
+            "final": {
+                "electrons_pct": 1.4546428836811998,
+                "fossil_pct": 73.42743248220967,
+                "bio_pct": 25.11792463410914,
+                "total": 4.770533208882496,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1761": {
+            "final": {
+                "electrons_pct": 1.4513237814365418,
+                "fossil_pct": 73.76732169392633,
+                "bio_pct": 24.78135452463712,
+                "total": 4.858561083246696,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1762": {
+            "final": {
+                "electrons_pct": 1.4475724145669808,
+                "fossil_pct": 74.06611533734777,
+                "bio_pct": 24.486312248085238,
+                "total": 4.9485229510424835,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1763": {
+            "final": {
+                "electrons_pct": 1.4431467002181464,
+                "fossil_pct": 74.40341301201576,
+                "bio_pct": 24.153440287766095,
+                "total": 5.0413645199523875,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1764": {
+            "final": {
+                "electrons_pct": 1.4397664505686993,
+                "fossil_pct": 74.6835046064747,
+                "bio_pct": 23.876728942956603,
+                "total": 5.131110877667911,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1765": {
+            "final": {
+                "electrons_pct": 1.4365262388561115,
+                "fossil_pct": 74.95424054974208,
+                "bio_pct": 23.609233211401804,
+                "total": 5.22083738918187,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1766": {
+            "final": {
+                "electrons_pct": 1.4332529933225895,
+                "fossil_pct": 75.28012428059309,
+                "bio_pct": 23.28662272608433,
+                "total": 5.311163448781171,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1767": {
+            "final": {
+                "electrons_pct": 1.4271177712174064,
+                "fossil_pct": 75.61564327724697,
+                "bio_pct": 22.957238951535604,
+                "total": 5.412812555599326,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1768": {
+            "final": {
+                "electrons_pct": 1.4247958723465644,
+                "fossil_pct": 75.88074713770642,
+                "bio_pct": 22.694456989947025,
+                "total": 5.5006594783692115,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1769": {
+            "final": {
+                "electrons_pct": 1.4211919506547261,
+                "fossil_pct": 76.15610758278191,
+                "bio_pct": 22.422700466563352,
+                "total": 5.593921080411706,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1770": {
+            "final": {
+                "electrons_pct": 1.4181828586398368,
+                "fossil_pct": 76.41698325057003,
+                "bio_pct": 22.16483389079013,
+                "total": 5.685362829404081,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1771": {
+            "final": {
+                "electrons_pct": 1.4155039669980418,
+                "fossil_pct": 76.6739019655696,
+                "bio_pct": 21.910594067432356,
+                "total": 5.775942547477546,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1772": {
+            "final": {
+                "electrons_pct": 1.4124333588689495,
+                "fossil_pct": 76.95443340902935,
+                "bio_pct": 21.633133232101695,
+                "total": 5.868595009313475,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1773": {
+            "final": {
+                "electrons_pct": 1.4102405276421424,
+                "fossil_pct": 77.21769369511335,
+                "bio_pct": 21.37206577724451,
+                "total": 5.958048083446251,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1774": {
+            "final": {
+                "electrons_pct": 1.4074646984324215,
+                "fossil_pct": 77.47307942075452,
+                "bio_pct": 21.119455880813057,
+                "total": 6.050398082339754,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1775": {
+            "final": {
+                "electrons_pct": 1.4029712766902485,
+                "fossil_pct": 77.74952281922755,
+                "bio_pct": 20.847505904082205,
+                "total": 6.150752870628742,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1776": {
+            "final": {
+                "electrons_pct": 1.4000545241850346,
+                "fossil_pct": 77.99344510222711,
+                "bio_pct": 20.606500373587856,
+                "total": 6.244837096840558,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1777": {
+            "final": {
+                "electrons_pct": 1.3841412704716003,
+                "fossil_pct": 78.23264721165282,
+                "bio_pct": 20.383211517875573,
+                "total": 6.339373657579205,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1778": {
+            "final": {
+                "electrons_pct": 1.366871256959176,
+                "fossil_pct": 78.51669440672838,
+                "bio_pct": 20.11643433631245,
+                "total": 6.442616733928827,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1779": {
+            "final": {
+                "electrons_pct": 1.3491173417657996,
+                "fossil_pct": 78.81682400854329,
+                "bio_pct": 19.83405864969091,
+                "total": 6.55097438288452,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1780": {
+            "final": {
+                "electrons_pct": 1.3313973710587719,
+                "fossil_pct": 79.12667357278491,
+                "bio_pct": 19.541929056156317,
+                "total": 6.662180233774453,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1781": {
+            "final": {
+                "electrons_pct": 1.3201186033941719,
+                "fossil_pct": 79.35241605271335,
+                "bio_pct": 19.327465343892488,
+                "total": 6.74345470785052,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1782": {
+            "final": {
+                "electrons_pct": 1.3062904967172446,
+                "fossil_pct": 79.58353771438021,
+                "bio_pct": 19.110171788902537,
+                "total": 6.839588580847368,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1783": {
+            "final": {
+                "electrons_pct": 1.2919628758428785,
+                "fossil_pct": 79.8230515771227,
+                "bio_pct": 18.88498554703443,
+                "total": 6.940603538773722,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1784": {
+            "final": {
+                "electrons_pct": 1.2790191509938438,
+                "fossil_pct": 80.06695811550381,
+                "bio_pct": 18.65402273350235,
+                "total": 7.036409032152689,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1785": {
+            "final": {
+                "electrons_pct": 1.2636428131584396,
+                "fossil_pct": 80.34024822517961,
+                "bio_pct": 18.396108961661955,
+                "total": 7.148058927960175,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1786": {
+            "final": {
+                "electrons_pct": 1.2510322125343094,
+                "fossil_pct": 80.57008524900489,
+                "bio_pct": 18.1788825384608,
+                "total": 7.2465605415178755,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1787": {
+            "final": {
+                "electrons_pct": 1.2383355261012514,
+                "fossil_pct": 80.80348001139934,
+                "bio_pct": 17.958184462499418,
+                "total": 7.347740827272378,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1788": {
+            "final": {
+                "electrons_pct": 1.2246303354004686,
+                "fossil_pct": 81.05254800358331,
+                "bio_pct": 17.72282166101622,
+                "total": 7.4573208556003765,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1789": {
+            "final": {
+                "electrons_pct": 1.232689368610307,
+                "fossil_pct": 81.32657735548008,
+                "bio_pct": 17.44073327590963,
+                "total": 7.585368732521677,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1790": {
+            "final": {
+                "electrons_pct": 1.277303432713369,
+                "fossil_pct": 81.62371632952879,
+                "bio_pct": 17.09898023775785,
+                "total": 7.743285721023885,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1791": {
+            "final": {
+                "electrons_pct": 1.2876814662460216,
+                "fossil_pct": 81.84852697728803,
+                "bio_pct": 16.863791556465948,
+                "total": 7.861924140185591,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1792": {
+            "final": {
+                "electrons_pct": 1.2848148075754011,
+                "fossil_pct": 82.12514663473334,
+                "bio_pct": 16.590038557691255,
+                "total": 8.005527876084754,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1793": {
+            "final": {
+                "electrons_pct": 1.2786375841355613,
+                "fossil_pct": 82.37060984526956,
+                "bio_pct": 16.350752570594878,
+                "total": 8.137558321994884,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1794": {
+            "final": {
+                "electrons_pct": 1.2658529368043867,
+                "fossil_pct": 82.56649090608447,
+                "bio_pct": 16.167656157111143,
+                "total": 8.24073184489249,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1795": {
+            "final": {
+                "electrons_pct": 1.2191058703424298,
+                "fossil_pct": 82.87361550983195,
+                "bio_pct": 15.907278619825622,
+                "total": 8.384690872776812,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1796": {
+            "final": {
+                "electrons_pct": 1.1513322775208146,
+                "fossil_pct": 83.10216206578322,
+                "bio_pct": 15.746505656695978,
+                "total": 8.478078141981083,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1797": {
+            "final": {
+                "electrons_pct": 1.1930502570481125,
+                "fossil_pct": 83.53922469245093,
+                "bio_pct": 15.267725050500955,
+                "total": 8.745537598903264,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1798": {
+            "final": {
+                "electrons_pct": 1.197687968600628,
+                "fossil_pct": 83.89655984047009,
+                "bio_pct": 14.9057521909293,
+                "total": 8.956505846635105,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1799": {
+            "final": {
+                "electrons_pct": 1.2240316469397847,
+                "fossil_pct": 84.09378594336609,
+                "bio_pct": 14.682182409694125,
+                "total": 9.103572023170592,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1800": {
+            "final": {
+                "electrons_pct": 1.3054696063255442,
+                "fossil_pct": 84.39555831113861,
+                "bio_pct": 14.29897208253585,
+                "total": 9.356006694907174,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1801": {
+            "final": {
+                "electrons_pct": 1.3599928913021029,
+                "fossil_pct": 84.37414377659054,
+                "bio_pct": 14.265863332107356,
+                "total": 9.50510595438763,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1802": {
+            "final": {
+                "electrons_pct": 1.4174791955775554,
+                "fossil_pct": 84.35997811009193,
+                "bio_pct": 14.222542694330532,
+                "total": 9.653906296744475,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1803": {
+            "final": {
+                "electrons_pct": 1.4595743782227146,
+                "fossil_pct": 84.35997539220588,
+                "bio_pct": 14.180450229571404,
+                "total": 9.80152055283554,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1804": {
+            "final": {
+                "electrons_pct": 1.5048043031045808,
+                "fossil_pct": 84.3582545063996,
+                "bio_pct": 14.136941190495822,
+                "total": 9.949711538987147,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1805": {
+            "final": {
+                "electrons_pct": 1.4961993717992992,
+                "fossil_pct": 84.41249258101455,
+                "bio_pct": 14.091308047186146,
+                "total": 10.09155939980581,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1806": {
+            "final": {
+                "electrons_pct": 1.4678357899787722,
+                "fossil_pct": 84.49127674879428,
+                "bio_pct": 14.040887461226967,
+                "total": 10.230572792474769,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1807": {
+            "final": {
+                "electrons_pct": 1.460930000136532,
+                "fossil_pct": 84.55706522223757,
+                "bio_pct": 13.982004777625894,
+                "total": 10.37122080453267,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1808": {
+            "final": {
+                "electrons_pct": 1.4652770748852073,
+                "fossil_pct": 84.62358089897192,
+                "bio_pct": 13.911142026142882,
+                "total": 10.511841834422368,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1809": {
+            "final": {
+                "electrons_pct": 1.4723474086003003,
+                "fossil_pct": 84.69296361483924,
+                "bio_pct": 13.834688976560441,
+                "total": 10.652147648276339,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1810": {
+            "final": {
+                "electrons_pct": 1.483068660591887,
+                "fossil_pct": 84.76480289675908,
+                "bio_pct": 13.752128442649031,
+                "total": 10.799341208752924,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1811": {
+            "final": {
+                "electrons_pct": 1.4890976970501992,
+                "fossil_pct": 84.84022404328798,
+                "bio_pct": 13.67067825966183,
+                "total": 10.940637735783422,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1812": {
+            "final": {
+                "electrons_pct": 1.481876930578961,
+                "fossil_pct": 84.9123256940471,
+                "bio_pct": 13.605797375373946,
+                "total": 11.0825591873989,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1813": {
+            "final": {
+                "electrons_pct": 1.5196894907939695,
+                "fossil_pct": 84.95752671530352,
+                "bio_pct": 13.522783793902521,
+                "total": 11.228267028606878,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1814": {
+            "final": {
+                "electrons_pct": 1.5434569722259806,
+                "fossil_pct": 85.01631703177549,
+                "bio_pct": 13.440225995998537,
+                "total": 11.372512935635012,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1815": {
+            "final": {
+                "electrons_pct": 1.5647717766899414,
+                "fossil_pct": 85.08436703853648,
+                "bio_pct": 13.350861184773574,
+                "total": 11.522060820048416,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1816": {
+            "final": {
+                "electrons_pct": 1.5637206505535166,
+                "fossil_pct": 85.17379708630838,
+                "bio_pct": 13.262482263138093,
+                "total": 11.663013533913887,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1817": {
+            "final": {
+                "electrons_pct": 1.4551820170838232,
+                "fossil_pct": 85.76112861613153,
+                "bio_pct": 12.783689366784646,
+                "total": 12.13036067232719,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1818": {
+            "final": {
+                "electrons_pct": 1.4185955986677763,
+                "fossil_pct": 86.25742911960029,
+                "bio_pct": 12.323975281731933,
+                "total": 12.611376167643838,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1819": {
+            "final": {
+                "electrons_pct": 1.367730850406866,
+                "fossil_pct": 86.74074424398775,
+                "bio_pct": 11.89152490560539,
+                "total": 13.08987198392483,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1820": {
+            "final": {
+                "electrons_pct": 1.3145006158658752,
+                "fossil_pct": 87.18983505246078,
+                "bio_pct": 11.495664331673346,
+                "total": 13.563415446957064,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1821": {
+            "final": {
+                "electrons_pct": 1.2239388321927664,
+                "fossil_pct": 87.6786743247841,
+                "bio_pct": 11.097386843023127,
+                "total": 14.069519017916283,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1822": {
+            "final": {
+                "electrons_pct": 1.1614119173058501,
+                "fossil_pct": 88.1152579258362,
+                "bio_pct": 10.723330156857955,
+                "total": 14.573514782682784,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1823": {
+            "final": {
+                "electrons_pct": 1.1178538520228174,
+                "fossil_pct": 88.50563548162323,
+                "bio_pct": 10.37651066635396,
+                "total": 15.068409352609475,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1824": {
+            "final": {
+                "electrons_pct": 1.1043627243968857,
+                "fossil_pct": 88.85388049587242,
+                "bio_pct": 10.041756779730699,
+                "total": 15.571849541401043,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1825": {
+            "final": {
+                "electrons_pct": 1.0593964002900296,
+                "fossil_pct": 89.22029495955715,
+                "bio_pct": 9.720308640152812,
+                "total": 16.08042133882684,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1826": {
+            "final": {
+                "electrons_pct": 1.0592667877749105,
+                "fossil_pct": 89.54079322740385,
+                "bio_pct": 9.39993998482125,
+                "total": 16.619354562399515,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1827": {
+            "final": {
+                "electrons_pct": 0.930049479997804,
+                "fossil_pct": 89.95410641597498,
+                "bio_pct": 9.115844104027218,
+                "total": 17.104392079060023,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1828": {
+            "final": {
+                "electrons_pct": 0.9099664575671474,
+                "fossil_pct": 90.24093611031073,
+                "bio_pct": 8.84909743212213,
+                "total": 17.59606980828662,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1829": {
+            "final": {
+                "electrons_pct": 0.8883400639813297,
+                "fossil_pct": 90.52060975747341,
+                "bio_pct": 8.591050178545267,
+                "total": 18.092276150736975,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1830": {
+            "final": {
+                "electrons_pct": 0.866385944014956,
+                "fossil_pct": 90.86356088353867,
+                "bio_pct": 8.270053172446366,
+                "total": 18.561143136223684,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1831": {
+            "final": {
+                "electrons_pct": 0.8583474598914062,
+                "fossil_pct": 91.02587830418543,
+                "bio_pct": 8.11577423592316,
+                "total": 19.03233524575641,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1832": {
+            "final": {
+                "electrons_pct": 0.8502564382512648,
+                "fossil_pct": 91.2059182044998,
+                "bio_pct": 7.943825357248954,
+                "total": 19.60414780454941,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1833": {
+            "final": {
+                "electrons_pct": 0.8333676794173541,
+                "fossil_pct": 91.38410881775519,
+                "bio_pct": 7.782523502827467,
+                "total": 20.15965865659571,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1834": {
+            "final": {
+                "electrons_pct": 0.8257175782275656,
+                "fossil_pct": 91.55383067530151,
+                "bio_pct": 7.620451746470926,
+                "total": 20.76353506617078,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1835": {
+            "final": {
+                "electrons_pct": 0.8163345141933956,
+                "fossil_pct": 91.73096719621424,
+                "bio_pct": 7.452698289592376,
+                "total": 21.464867171055932,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1836": {
+            "final": {
+                "electrons_pct": 0.7887353767703121,
+                "fossil_pct": 91.9149919592677,
+                "bio_pct": 7.296272663961992,
+                "total": 22.147391194376983,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1837": {
+            "final": {
+                "electrons_pct": 0.7624441036534696,
+                "fossil_pct": 92.08191245283939,
+                "bio_pct": 7.155643443507141,
+                "total": 22.768593932540984,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1838": {
+            "final": {
+                "electrons_pct": 0.7701972278677809,
+                "fossil_pct": 92.21959560860789,
+                "bio_pct": 7.010207163524332,
+                "total": 23.466803068845362,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1839": {
+            "final": {
+                "electrons_pct": 0.7974680323576997,
+                "fossil_pct": 92.33023732392607,
+                "bio_pct": 6.872294643716235,
+                "total": 24.179581836687998,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1840": {
+            "final": {
+                "electrons_pct": 0.8248509763945427,
+                "fossil_pct": 92.44258826627387,
+                "bio_pct": 6.732560757331596,
+                "total": 24.95424261254509,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1841": {
+            "final": {
+                "electrons_pct": 0.8326228988379824,
+                "fossil_pct": 92.65690954051718,
+                "bio_pct": 6.510467560644849,
+                "total": 25.985446368744565,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1842": {
+            "final": {
+                "electrons_pct": 0.8255327814199567,
+                "fossil_pct": 92.87213649303523,
+                "bio_pct": 6.302330725544826,
+                "total": 26.914720106500244,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1843": {
+            "final": {
+                "electrons_pct": 0.7719202556173579,
+                "fossil_pct": 93.14060587863698,
+                "bio_pct": 6.087473865745669,
+                "total": 28.214284491018514,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1844": {
+            "final": {
+                "electrons_pct": 0.7416124440945681,
+                "fossil_pct": 93.36459536792408,
+                "bio_pct": 5.8937921879813535,
+                "total": 29.454120534276374,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1845": {
+            "final": {
+                "electrons_pct": 0.7178228982158961,
+                "fossil_pct": 93.57709520352303,
+                "bio_pct": 5.7050818982610725,
+                "total": 30.91551198952266,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1846": {
+            "final": {
+                "electrons_pct": 0.6992100555410391,
+                "fossil_pct": 93.76177769044048,
+                "bio_pct": 5.53901225401848,
+                "total": 32.207829867639525,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1847": {
+            "final": {
+                "electrons_pct": 0.7072131086038441,
+                "fossil_pct": 93.90020176793155,
+                "bio_pct": 5.3925851234646185,
+                "total": 33.318836493121005,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1848": {
+            "final": {
+                "electrons_pct": 0.6942586221629359,
+                "fossil_pct": 94.05629534607493,
+                "bio_pct": 5.249446031762139,
+                "total": 34.56348513444852,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1849": {
+            "final": {
+                "electrons_pct": 0.7067539144517602,
+                "fossil_pct": 94.17977537611138,
+                "bio_pct": 5.11347070943688,
+                "total": 35.948781920403476,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1850": {
+            "final": {
+                "electrons_pct": 0.670475484644036,
+                "fossil_pct": 94.34249161389964,
+                "bio_pct": 4.987032901456319,
+                "total": 37.31161810721306,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1851": {
+            "final": {
+                "electrons_pct": 0.715547851544858,
+                "fossil_pct": 94.43216358994711,
+                "bio_pct": 4.85228855850803,
+                "total": 38.77498098502116,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1852": {
+            "final": {
+                "electrons_pct": 0.6982503455532142,
+                "fossil_pct": 94.57212913325272,
+                "bio_pct": 4.72962052119407,
+                "total": 40.25364176867139,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1853": {
+            "final": {
+                "electrons_pct": 0.7299061815229405,
+                "fossil_pct": 94.65202726055534,
+                "bio_pct": 4.618066557921732,
+                "total": 41.64024232896107,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1854": {
+            "final": {
+                "electrons_pct": 0.6987175272977303,
+                "fossil_pct": 94.78585603584648,
+                "bio_pct": 4.515426436855779,
+                "total": 43.150173723172536,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1855": {
+            "final": {
+                "electrons_pct": 0.682039375388019,
+                "fossil_pct": 94.89664288171139,
+                "bio_pct": 4.421317742900597,
+                "total": 44.12849055868051,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1856": {
+            "final": {
+                "electrons_pct": 0.70082712753955,
+                "fossil_pct": 94.96672146941049,
+                "bio_pct": 4.332451403049967,
+                "total": 45.47673230095181,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1857": {
+            "final": {
+                "electrons_pct": 0.7044378965259613,
+                "fossil_pct": 95.0431420944724,
+                "bio_pct": 4.252420009001644,
+                "total": 46.74123297043913,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1858": {
+            "final": {
+                "electrons_pct": 0.7014315227146682,
+                "fossil_pct": 95.12308865059983,
+                "bio_pct": 4.17547982668549,
+                "total": 47.535459753065815,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1859": {
+            "final": {
+                "electrons_pct": 0.6941951954897908,
+                "fossil_pct": 95.20056737357542,
+                "bio_pct": 4.105237430934781,
+                "total": 48.85931621327358,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1860": {
+            "final": {
+                "electrons_pct": 0.6983511927916818,
+                "fossil_pct": 95.26018401659229,
+                "bio_pct": 4.041464790616035,
+                "total": 50.64890246684786,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1861": {
+            "final": {
+                "electrons_pct": 0.7071355082071702,
+                "fossil_pct": 95.31192957416422,
+                "bio_pct": 3.9809349176286055,
+                "total": 51.70934121143767,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1862": {
+            "final": {
+                "electrons_pct": 0.6891223458733708,
+                "fossil_pct": 95.38531390078742,
+                "bio_pct": 3.925563753339211,
+                "total": 52.86067521299481,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1863": {
+            "final": {
+                "electrons_pct": 0.6718929039776533,
+                "fossil_pct": 95.45329987323062,
+                "bio_pct": 3.8748072227917296,
+                "total": 54.58430680937082,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1864": {
+            "final": {
+                "electrons_pct": 0.6485372016863201,
+                "fossil_pct": 95.52374851050767,
+                "bio_pct": 3.8277142878060055,
+                "total": 55.93999294077566,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1865": {
+            "final": {
+                "electrons_pct": 0.6405260364845776,
+                "fossil_pct": 95.57720991208899,
+                "bio_pct": 3.7822640514264254,
+                "total": 57.299740849987046,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1866": {
+            "final": {
+                "electrons_pct": 0.6495940858074903,
+                "fossil_pct": 95.61395557344153,
+                "bio_pct": 3.7364503407509915,
+                "total": 58.507611315104114,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1867": {
+            "final": {
+                "electrons_pct": 0.6317985937782571,
+                "fossil_pct": 95.67510906039264,
+                "bio_pct": 3.693092345829088,
+                "total": 59.55407213712561,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1868": {
+            "final": {
+                "electrons_pct": 0.6597495912124067,
+                "fossil_pct": 95.68992557333176,
+                "bio_pct": 3.650324835455823,
+                "total": 60.690828843960404,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1869": {
+            "final": {
+                "electrons_pct": 0.6243867753024128,
+                "fossil_pct": 95.76226367169237,
+                "bio_pct": 3.6133495530052295,
+                "total": 62.05524413612319,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1870": {
+            "final": {
+                "electrons_pct": 0.6062784950855551,
+                "fossil_pct": 95.80872474486291,
+                "bio_pct": 3.5849967600515287,
+                "total": 63.54082458698902,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1871": {
+            "final": {
+                "electrons_pct": 0.5857590297614035,
+                "fossil_pct": 95.86670864468239,
+                "bio_pct": 3.5475323255562006,
+                "total": 65.439081121589,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1872": {
+            "final": {
+                "electrons_pct": 0.5692677373775725,
+                "fossil_pct": 95.9005368858259,
+                "bio_pct": 3.530195376796532,
+                "total": 67.04463993086682,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1873": {
+            "final": {
+                "electrons_pct": 0.5508056616568979,
+                "fossil_pct": 95.93542103173287,
+                "bio_pct": 3.5137733066102377,
+                "total": 69.03386354552717,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1874": {
+            "final": {
+                "electrons_pct": 0.5583203056159755,
+                "fossil_pct": 95.95851756084039,
+                "bio_pct": 3.483162133543626,
+                "total": 69.97887324177599,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1875": {
+            "final": {
+                "electrons_pct": 0.527643136213589,
+                "fossil_pct": 96.00282627564224,
+                "bio_pct": 3.4695305881441882,
+                "total": 72.04958793255734,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1876": {
+            "final": {
+                "electrons_pct": 0.5632779898172816,
+                "fossil_pct": 95.99687370933196,
+                "bio_pct": 3.439848300850755,
+                "total": 73.14291077868646,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1877": {
+            "final": {
+                "electrons_pct": 0.5376961622280604,
+                "fossil_pct": 96.04622274494662,
+                "bio_pct": 3.416081092825326,
+                "total": 74.55641634768585,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1878": {
+            "final": {
+                "electrons_pct": 0.4822572187506936,
+                "fossil_pct": 96.12672314024553,
+                "bio_pct": 3.3910196410038,
+                "total": 75.46710273063125,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1879": {
+            "final": {
+                "electrons_pct": 0.4531681032132125,
+                "fossil_pct": 96.18020351607845,
+                "bio_pct": 3.3666283807083315,
+                "total": 76.72963613088753,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1880": {
+            "final": {
+                "electrons_pct": 0.4840082050044054,
+                "fossil_pct": 96.14974092781694,
+                "bio_pct": 3.3662508671786564,
+                "total": 79.66174566816188,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1881": {
+            "final": {
+                "electrons_pct": 0.4205246645360936,
+                "fossil_pct": 96.22391760888085,
+                "bio_pct": 3.3555577265830494,
+                "total": 81.96261209456713,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1882": {
+            "final": {
+                "electrons_pct": 0.40887128558368896,
+                "fossil_pct": 96.26916180148571,
+                "bio_pct": 3.321966912930594,
+                "total": 83.23323515553687,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1883": {
+            "final": {
+                "electrons_pct": 0.3625681272193256,
+                "fossil_pct": 96.34056354531616,
+                "bio_pct": 3.2968683274645167,
+                "total": 85.19182502319305,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1884": {
+            "final": {
+                "electrons_pct": 0.31653038716504395,
+                "fossil_pct": 96.42366825725938,
+                "bio_pct": 3.259801355575579,
+                "total": 85.7050228952315,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1885": {
+            "final": {
+                "electrons_pct": 0.32320873236768916,
+                "fossil_pct": 96.45675843089893,
+                "bio_pct": 3.220032836733372,
+                "total": 86.67576180363758,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1886": {
+            "final": {
+                "electrons_pct": 0.29638491159499153,
+                "fossil_pct": 96.51719012625554,
+                "bio_pct": 3.1864249621494802,
+                "total": 87.61279242596316,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1887": {
+            "final": {
+                "electrons_pct": 0.2857835079972572,
+                "fossil_pct": 96.55100492772817,
+                "bio_pct": 3.1632115642745795,
+                "total": 89.36223839075346,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1888": {
+            "final": {
+                "electrons_pct": 0.27749216171342705,
+                "fossil_pct": 96.58423225755374,
+                "bio_pct": 3.138275580732846,
+                "total": 91.31358706751388,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1889": {
+            "final": {
+                "electrons_pct": 0.2706794674945401,
+                "fossil_pct": 96.61926517283787,
+                "bio_pct": 3.110055359667581,
+                "total": 93.29744379987851,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1890": {
+            "final": {
+                "electrons_pct": 0.2522955331455914,
+                "fossil_pct": 96.66752058653016,
+                "bio_pct": 3.080183880324246,
+                "total": 95.04274878373272,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1891": {
+            "final": {
+                "electrons_pct": 0.23113495699230865,
+                "fossil_pct": 96.72199807216272,
+                "bio_pct": 3.0468669708449845,
+                "total": 96.79082791176553,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1892": {
+            "final": {
+                "electrons_pct": 0.22853477258814378,
+                "fossil_pct": 96.76707444058675,
+                "bio_pct": 3.004390786825088,
+                "total": 97.50293829992799,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1893": {
+            "final": {
+                "electrons_pct": 0.21445518611374567,
+                "fossil_pct": 96.85186668849673,
+                "bio_pct": 2.9336781253895303,
+                "total": 96.20674485914218,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1894": {
+            "final": {
+                "electrons_pct": 0.21139659771145752,
+                "fossil_pct": 96.84737992381024,
+                "bio_pct": 2.941223478478296,
+                "total": 100.45200856734783,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1895": {
+            "final": {
+                "electrons_pct": 0.19619848089435896,
+                "fossil_pct": 96.89623317834405,
+                "bio_pct": 2.907568340761601,
+                "total": 101.92807477576514,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1896": {
+            "final": {
+                "electrons_pct": 0.18031560415362793,
+                "fossil_pct": 96.93823039590076,
+                "bio_pct": 2.881453999945614,
+                "total": 103.77292502434821,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1897": {
+            "final": {
+                "electrons_pct": 0.1682372183175509,
+                "fossil_pct": 96.9755137053469,
+                "bio_pct": 2.8562490763355433,
+                "total": 105.4222146197799,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1898": {
+            "final": {
+                "electrons_pct": 0.1578658511108322,
+                "fossil_pct": 97.02140460037455,
+                "bio_pct": 2.8207295485146187,
+                "total": 106.64719436471113,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1899": {
+            "final": {
+                "electrons_pct": 0.1535386516599543,
+                "fossil_pct": 97.03673432943819,
+                "bio_pct": 2.8097270189018486,
+                "total": 109.58741946910057,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1900": {
+            "final": {
+                "electrons_pct": 0.16346328305676866,
+                "fossil_pct": 97.05624182728567,
+                "bio_pct": 2.780294889657568,
+                "total": 111.3170079925623,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1901": {
+            "final": {
+                "electrons_pct": 0.17375648519086606,
+                "fossil_pct": 97.08457482602388,
+                "bio_pct": 2.741668688785243,
+                "total": 111.35471583792634,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1902": {
+            "final": {
+                "electrons_pct": 0.15113444743839988,
+                "fossil_pct": 97.12686912256366,
+                "bio_pct": 2.7219964299979313,
+                "total": 113.13408115635134,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1903": {
+            "final": {
+                "electrons_pct": 0.1361595199722618,
+                "fossil_pct": 97.1732008239265,
+                "bio_pct": 2.6906396561012293,
+                "total": 114.02522403663413,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1904": {
+            "final": {
+                "electrons_pct": 0.1474756404604145,
+                "fossil_pct": 97.1908181078284,
+                "bio_pct": 2.661706251711191,
+                "total": 115.09153750439343,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1905": {
+            "final": {
+                "electrons_pct": 0.14914548568552302,
+                "fossil_pct": 97.22615536428471,
+                "bio_pct": 2.6246991500297656,
+                "total": 117.0979979126126,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1906": {
+            "final": {
+                "electrons_pct": 0.14986274993691243,
+                "fossil_pct": 97.24392216390052,
+                "bio_pct": 2.6062150861625692,
+                "total": 119.12023332784301,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1907": {
+            "final": {
+                "electrons_pct": 0.15222140052390604,
+                "fossil_pct": 97.24923468413405,
+                "bio_pct": 2.598543915342032,
+                "total": 121.43520610860648,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1908": {
+            "final": {
+                "electrons_pct": 0.15866134731919004,
+                "fossil_pct": 97.26351553555982,
+                "bio_pct": 2.577823117120992,
+                "total": 120.52921294709384,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1909": {
+            "final": {
+                "electrons_pct": 0.15294384068633937,
+                "fossil_pct": 97.28236872065726,
+                "bio_pct": 2.5646874386564003,
+                "total": 121.3693518582596,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1910": {
+            "final": {
+                "electrons_pct": 0.16449983019324815,
+                "fossil_pct": 97.28588807486783,
+                "bio_pct": 2.5496120949389134,
+                "total": 122.44797147495872,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1911": {
+            "final": {
+                "electrons_pct": 0.16644981167413075,
+                "fossil_pct": 97.29602010933901,
+                "bio_pct": 2.537530078986857,
+                "total": 124.15877196155036,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1912": {
+            "final": {
+                "electrons_pct": 0.17628904042344795,
+                "fossil_pct": 97.37459533991218,
+                "bio_pct": 2.4491156196643815,
+                "total": 123.49861973931566,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1913": {
+            "final": {
+                "electrons_pct": 0.18727575146509212,
+                "fossil_pct": 97.55720798182071,
+                "bio_pct": 2.2555162667141966,
+                "total": 134.90666949097582,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1914": {
+            "final": {
+                "electrons_pct": 0.2083097616575439,
+                "fossil_pct": 97.28237453196576,
+                "bio_pct": 2.5093157063767,
+                "total": 118.35384293005299,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1915": {
+            "final": {
+                "electrons_pct": 0.24899113589375543,
+                "fossil_pct": 97.16454027500416,
+                "bio_pct": 2.586468589102093,
+                "total": 114.4866816429362,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1916": {
+            "final": {
+                "electrons_pct": 0.2848132940308936,
+                "fossil_pct": 97.08634911602988,
+                "bio_pct": 2.628837589939225,
+                "total": 112.59775177384257,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1917": {
+            "final": {
+                "electrons_pct": 0.2991282102381933,
+                "fossil_pct": 96.98865840363092,
+                "bio_pct": 2.7122133861308875,
+                "total": 107.01685317003937,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1918": {
+            "final": {
+                "electrons_pct": 0.3449877944979308,
+                "fossil_pct": 96.90558555474263,
+                "bio_pct": 2.7494266507594385,
+                "total": 100.7604620253402,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1919": {
+            "final": {
+                "electrons_pct": 0.3495165763212399,
+                "fossil_pct": 96.9642961523465,
+                "bio_pct": 2.68618727133225,
+                "total": 100.46731436256631,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1920": {
+            "final": {
+                "electrons_pct": 0.38601672888255106,
+                "fossil_pct": 96.972224540626,
+                "bio_pct": 2.641758730491458,
+                "total": 102.02763840326381,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1921": {
+            "final": {
+                "electrons_pct": 0.519328265435507,
+                "fossil_pct": 96.25192921380582,
+                "bio_pct": 3.2287425207586775,
+                "total": 72.11029465955801,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1922": {
+            "final": {
+                "electrons_pct": 0.4495713611711873,
+                "fossil_pct": 96.95264645667841,
+                "bio_pct": 2.5977821821503975,
+                "total": 95.18763077319625,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1923": {
+            "final": {
+                "electrons_pct": 0.49607352587130293,
+                "fossil_pct": 97.01235342736295,
+                "bio_pct": 2.491573046765751,
+                "total": 99.98795527735632,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1924": {
+            "final": {
+                "electrons_pct": 0.5352415596460791,
+                "fossil_pct": 97.07364874001212,
+                "bio_pct": 2.391109700341799,
+                "total": 103.48505424027582,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1925": {
+            "final": {
+                "electrons_pct": 0.6189753734073499,
+                "fossil_pct": 97.17531701578753,
+                "bio_pct": 2.2057076108051183,
+                "total": 98.7789763415801,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1926": {
+            "final": {
+                "electrons_pct": 0.9355690859226387,
+                "fossil_pct": 96.65008500598111,
+                "bio_pct": 2.4143459080962573,
+                "total": 69.76949477867868,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1927": {
+            "final": {
+                "electrons_pct": 0.7436239068656342,
+                "fossil_pct": 97.42986357988396,
+                "bio_pct": 1.826512513250408,
+                "total": 102.02934285205951,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1928": {
+            "final": {
+                "electrons_pct": 0.8660118321559382,
+                "fossil_pct": 97.39002406431331,
+                "bio_pct": 1.7439641035307651,
+                "total": 95.96059820916449,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1929": {
+            "final": {
+                "electrons_pct": 0.9040371448243011,
+                "fossil_pct": 97.46993868599432,
+                "bio_pct": 1.6260241691813775,
+                "total": 100.27507176718017,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1930": {
+            "final": {
+                "electrons_pct": 0.9972491052658294,
+                "fossil_pct": 97.41506358622527,
+                "bio_pct": 1.5876873085088945,
+                "total": 95.43256626211439,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1931": {
+            "final": {
+                "electrons_pct": 1.1262590549455436,
+                "fossil_pct": 97.3010846459218,
+                "bio_pct": 1.572656299132659,
+                "total": 88.9129808982974,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1932": {
+            "final": {
+                "electrons_pct": 1.23293058787918,
+                "fossil_pct": 97.2437408921975,
+                "bio_pct": 1.52332851992331,
+                "total": 88.41724365656795,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1933": {
+            "final": {
+                "electrons_pct": 1.3568233847158837,
+                "fossil_pct": 97.17201640234721,
+                "bio_pct": 1.4711602129368897,
+                "total": 89.85367272628824,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1934": {
+            "final": {
+                "electrons_pct": 1.4205500148965353,
+                "fossil_pct": 97.16224575075012,
+                "bio_pct": 1.4172042343533415,
+                "total": 96.93747137034165,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1935": {
+            "final": {
+                "electrons_pct": 1.565845657614957,
+                "fossil_pct": 97.02676684063111,
+                "bio_pct": 1.4073875017539377,
+                "total": 99.26113395523173,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1936": {
+            "final": {
+                "electrons_pct": 1.6623425137529149,
+                "fossil_pct": 96.94247027175179,
+                "bio_pct": 1.3951872144952888,
+                "total": 104.1319917926707,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1937": {
+            "final": {
+                "electrons_pct": 1.7230319194906936,
+                "fossil_pct": 96.8909103046325,
+                "bio_pct": 1.386057775876798,
+                "total": 108.20769391389405,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1938": {
+            "final": {
+                "electrons_pct": 1.9306818589562296,
+                "fossil_pct": 96.67499023804022,
+                "bio_pct": 1.394327903003551,
+                "total": 102.97015097379746,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1939": {
+            "final": {
+                "electrons_pct": 2.0709184397971794,
+                "fossil_pct": 96.52834823724633,
+                "bio_pct": 1.4007333229564964,
+                "total": 107.16743296340691,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1940": {
+            "final": {
+                "electrons_pct": 2.209289382012049,
+                "fossil_pct": 96.35486737186997,
+                "bio_pct": 1.4358432461179695,
+                "total": 111.15336595148449,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1941": {
+            "final": {
+                "electrons_pct": 2.3895673563488447,
+                "fossil_pct": 96.22202095717753,
+                "bio_pct": 1.3884116864736114,
+                "total": 114.48618062126472,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1942": {
+            "final": {
+                "electrons_pct": 2.6471979288455545,
+                "fossil_pct": 96.0373628042188,
+                "bio_pct": 1.3154392669356336,
+                "total": 113.28056013180552,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1943": {
+            "final": {
+                "electrons_pct": 2.7118782398249297,
+                "fossil_pct": 95.97382713308541,
+                "bio_pct": 1.314294627089663,
+                "total": 112.20619806069726,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1944": {
+            "final": {
+                "electrons_pct": 2.903858862734084,
+                "fossil_pct": 95.7939963685469,
+                "bio_pct": 1.3021447687190097,
+                "total": 106.83388510431529,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1945": {
+            "final": {
+                "electrons_pct": 3.0879713166150795,
+                "fossil_pct": 95.56987373655893,
+                "bio_pct": 1.3421549468260003,
+                "total": 102.68321646680666,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1946": {
+            "final": {
+                "electrons_pct": 3.3600712260630763,
+                "fossil_pct": 95.35161334337486,
+                "bio_pct": 1.2883154305620594,
+                "total": 106.01307950018982,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1947": {
+            "final": {
+                "electrons_pct": 3.519794990258682,
+                "fossil_pct": 95.21701539496597,
+                "bio_pct": 1.2631896147753385,
+                "total": 107.1779733786544,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1948": {
+            "final": {
+                "electrons_pct": 3.6545120077321913,
+                "fossil_pct": 95.14339820525207,
+                "bio_pct": 1.202089787015742,
+                "total": 111.66468188347484,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1949": {
+            "final": {
+                "electrons_pct": 3.81495706366177,
+                "fossil_pct": 94.99629846773492,
+                "bio_pct": 1.1887444686033188,
+                "total": 113.40897472106748,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1950": {
+            "final": {
+                "electrons_pct": 3.97348937396705,
+                "fossil_pct": 94.88861384741327,
+                "bio_pct": 1.1378967786196759,
+                "total": 118.95581010072952,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1951": {
+            "final": {
+                "electrons_pct": 4.406485506577489,
+                "fossil_pct": 94.4280747565337,
+                "bio_pct": 1.1654397368888008,
+                "total": 116.62854988300461,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1952": {
+            "final": {
+                "electrons_pct": 4.588024480489615,
+                "fossil_pct": 94.24426424400501,
+                "bio_pct": 1.1677112755053596,
+                "total": 116.89776407478948,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1953": {
+            "final": {
+                "electrons_pct": 4.819507138353065,
+                "fossil_pct": 94.0266300833547,
+                "bio_pct": 1.1538627782922295,
+                "total": 118.81332194119604,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1954": {
+            "final": {
+                "electrons_pct": 5.041275685043281,
+                "fossil_pct": 93.84549349848663,
+                "bio_pct": 1.1132308164700864,
+                "total": 122.64789456286752,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1955": {
+            "final": {
+                "electrons_pct": 5.420191320751437,
+                "fossil_pct": 93.45434612322077,
+                "bio_pct": 1.1254625560278024,
+                "total": 120.82528371444745,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1956": {
+            "final": {
+                "electrons_pct": 5.483171658128999,
+                "fossil_pct": 93.38872808529747,
+                "bio_pct": 1.1281002565735259,
+                "total": 120.05977777632891,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1957": {
+            "final": {
+                "electrons_pct": 5.960120700985908,
+                "fossil_pct": 92.88436643937312,
+                "bio_pct": 1.1555128596409625,
+                "total": 116.74432851645227,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1958": {
+            "final": {
+                "electrons_pct": 6.4994877765301355,
+                "fossil_pct": 92.34658938640116,
+                "bio_pct": 1.1539228370686914,
+                "total": 116.44076535832465,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1959": {
+            "final": {
+                "electrons_pct": 7.112133320016099,
+                "fossil_pct": 91.73054125303258,
+                "bio_pct": 1.157325426951315,
+                "total": 115.1715183527108,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1960": {
+            "final": {
+                "electrons_pct": 7.789296454159627,
+                "fossil_pct": 91.10315506717124,
+                "bio_pct": 1.1075484786691259,
+                "total": 119.3814481863832,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1961": {
+            "final": {
+                "electrons_pct": 8.485438382068597,
+                "fossil_pct": 90.40973959737408,
+                "bio_pct": 1.1048220205573238,
+                "total": 118.67974891906752,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1962": {
+            "final": {
+                "electrons_pct": 9.180096464644345,
+                "fossil_pct": 89.73868017215518,
+                "bio_pct": 1.0812233632004655,
+                "total": 120.28966856119084,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1963": {
+            "final": {
+                "electrons_pct": 9.642603295648174,
+                "fossil_pct": 89.33065259327438,
+                "bio_pct": 1.0267441110774373,
+                "total": 125.6398732734205,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1964": {
+            "final": {
+                "electrons_pct": 10.583498968801617,
+                "fossil_pct": 88.41180572422923,
+                "bio_pct": 1.004695306969155,
+                "total": 122.6043350113725,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1965": {
+            "final": {
+                "electrons_pct": 10.687988510860592,
+                "fossil_pct": 88.3836373138674,
+                "bio_pct": 0.9283741752720247,
+                "total": 126.41454612372442,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1966": {
+            "final": {
+                "electrons_pct": 11.090844846710882,
+                "fossil_pct": 88.0236308456138,
+                "bio_pct": 0.8855243076753265,
+                "total": 125.95927523753033,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1967": {
+            "final": {
+                "electrons_pct": 11.559772761841135,
+                "fossil_pct": 87.60414823247646,
+                "bio_pct": 0.8360790056824102,
+                "total": 126.4473803091264,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1968": {
+            "final": {
+                "electrons_pct": 12.10050216110293,
+                "fossil_pct": 87.128115480017,
+                "bio_pct": 0.7713823588800779,
+                "total": 129.5077581823865,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1969": {
+            "final": {
+                "electrons_pct": 12.312443794095856,
+                "fossil_pct": 86.9952351858679,
+                "bio_pct": 0.6923210200362199,
+                "total": 135.22628562556443,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1970": {
+            "final": {
+                "electrons_pct": 12.345728335325287,
+                "fossil_pct": 87.03313460314409,
+                "bio_pct": 0.6211370615306202,
+                "total": 140.6130875281774,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1971": {
+            "final": {
+                "electrons_pct": 12.631125807679902,
+                "fossil_pct": 86.79380380810925,
+                "bio_pct": 0.5750703842108558,
+                "total": 140.9566589161693,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1972": {
+            "final": {
+                "electrons_pct": 12.792899809318795,
+                "fossil_pct": 86.68867852956619,
+                "bio_pct": 0.5184216611150197,
+                "total": 144.24551597470565,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1973": {
+            "final": {
+                "electrons_pct": 13.083021448163008,
+                "fossil_pct": 86.45869381629645,
+                "bio_pct": 0.45828473554054533,
+                "total": 149.47039403179002,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1974": {
+            "final": {
+                "electrons_pct": 13.315357105204253,
+                "fossil_pct": 86.22538836034028,
+                "bio_pct": 0.4592545344554757,
+                "total": 143.44986289163577,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1975": {
+            "final": {
+                "electrons_pct": 13.993456257748232,
+                "fossil_pct": 85.54167394757654,
+                "bio_pct": 0.4648697946752455,
+                "total": 136.08111502317107,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1976": {
+            "final": {
+                "electrons_pct": 13.817677685497085,
+                "fossil_pct": 85.74621664488227,
+                "bio_pct": 0.4361056696206375,
+                "total": 139.04886871282807,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1977": {
+            "final": {
+                "electrons_pct": 13.869465843195124,
+                "fossil_pct": 85.72001242365165,
+                "bio_pct": 0.41052173315322554,
+                "total": 141.33234689999782,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1978": {
+            "final": {
+                "electrons_pct": 13.907715124055816,
+                "fossil_pct": 85.7057382507048,
+                "bio_pct": 0.38654662523937056,
+                "total": 143.32035615546593,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1979": {
+            "final": {
+                "electrons_pct": 13.955402472451036,
+                "fossil_pct": 85.68051141060103,
+                "bio_pct": 0.36408611694793314,
+                "total": 148.1517626988062,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1980": {
+            "final": {
+                "electrons_pct": 14.347328493733094,
+                "fossil_pct": 85.26720451187182,
+                "bio_pct": 0.38546699439506876,
+                "total": 136.1465463012191,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1981": {
+            "final": {
+                "electrons_pct": 14.417006924674677,
+                "fossil_pct": 85.20051163745401,
+                "bio_pct": 0.3824814378713191,
+                "total": 133.3920942254066,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1982": {
+            "final": {
+                "electrons_pct": 14.090752366319363,
+                "fossil_pct": 85.53807813923832,
+                "bio_pct": 0.3711694944423189,
+                "total": 133.52390415183163,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1983": {
+            "final": {
+                "electrons_pct": 14.353788231213048,
+                "fossil_pct": 85.28095728807284,
+                "bio_pct": 0.36525448071411837,
+                "total": 131.68900736264334,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1984": {
+            "final": {
+                "electrons_pct": 14.08234795634445,
+                "fossil_pct": 85.56865106826781,
+                "bio_pct": 0.3490009753877579,
+                "total": 134.0970464280302,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1985": {
+            "final": {
+                "electrons_pct": 14.467410063725868,
+                "fossil_pct": 85.1970744729272,
+                "bio_pct": 0.3355154633469292,
+                "total": 135.61222945170832,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1986": {
+            "final": {
+                "electrons_pct": 14.595496551743075,
+                "fossil_pct": 85.0834289319879,
+                "bio_pct": 0.3210745162690126,
+                "total": 137.6627473074412,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1987": {
+            "final": {
+                "electrons_pct": 15.464611790271709,
+                "fossil_pct": 84.2241745558865,
+                "bio_pct": 0.311213653841788,
+                "total": 137.8474224071451,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1988": {
+            "final": {
+                "electrons_pct": 15.427689060196434,
+                "fossil_pct": 84.2778369198745,
+                "bio_pct": 0.29447401992906846,
+                "total": 141.268829114434,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1989": {
+            "final": {
+                "electrons_pct": 15.742891728658618,
+                "fossil_pct": 83.95693260860799,
+                "bio_pct": 0.3001756627334154,
+                "total": 140.2512102967815,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1990": {
+            "final": {
+                "electrons_pct": 15.479173174587652,
+                "fossil_pct": 84.18906988677776,
+                "bio_pct": 0.3317569386346,
+                "total": 140.52456654523112,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1991": {
+            "final": {
+                "electrons_pct": 15.280286305887081,
+                "fossil_pct": 84.40273289861273,
+                "bio_pct": 0.3169807955002,
+                "total": 144.74062987822577,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1992": {
+            "final": {
+                "electrons_pct": 15.450481437630447,
+                "fossil_pct": 84.0769736263144,
+                "bio_pct": 0.4725449360551493,
+                "total": 145.04440693445693,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1993": {
+            "final": {
+                "electrons_pct": 16.033960481925774,
+                "fossil_pct": 83.45945198467118,
+                "bio_pct": 0.5065875334030532,
+                "total": 144.10145372037698,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1994": {
+            "final": {
+                "electrons_pct": 16.29759541006206,
+                "fossil_pct": 83.18308968766624,
+                "bio_pct": 0.5193149022716955,
+                "total": 141.9177452401348,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1995": {
+            "final": {
+                "electrons_pct": 16.91216893080556,
+                "fossil_pct": 82.57090480708487,
+                "bio_pct": 0.516926262109587,
+                "total": 142.3800750606805,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1996": {
+            "final": {
+                "electrons_pct": 16.863820845672805,
+                "fossil_pct": 82.69505436482129,
+                "bio_pct": 0.4411247895059159,
+                "total": 150.75099287547107,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1997": {
+            "final": {
+                "electrons_pct": 17.598942535208927,
+                "fossil_pct": 82.07169735551571,
+                "bio_pct": 0.329360109275367,
+                "total": 147.8624721953913,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1998": {
+            "final": {
+                "electrons_pct": 17.761075699511906,
+                "fossil_pct": 81.92742249849705,
+                "bio_pct": 0.3115018019910635,
+                "total": 150.23990134523405,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "1999": {
+            "final": {
+                "electrons_pct": 18.43781634967309,
+                "fossil_pct": 81.26141869690038,
+                "bio_pct": 0.3007649534265499,
+                "total": 148.7540336408444,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2000": {
+            "final": {
+                "electrons_pct": 18.567374106536473,
+                "fossil_pct": 81.13169955552534,
+                "bio_pct": 0.300926337938184,
+                "total": 151.13333153757534,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2001": {
+            "final": {
+                "electrons_pct": 18.625763161814913,
+                "fossil_pct": 81.06642930198794,
+                "bio_pct": 0.30780753619714685,
+                "total": 153.4075500014924,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2002": {
+            "final": {
+                "electrons_pct": 19.258294515632937,
+                "fossil_pct": 80.42783576862986,
+                "bio_pct": 0.3138697157371931,
+                "total": 149.9348221266556,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2003": {
+            "final": {
+                "electrons_pct": 19.206632406430202,
+                "fossil_pct": 80.52613452488892,
+                "bio_pct": 0.2672330686808778,
+                "total": 152.3015104414446,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2004": {
+            "final": {
+                "electrons_pct": 19.222312729547667,
+                "fossil_pct": 80.4899662313713,
+                "bio_pct": 0.2877210390810249,
+                "total": 156.26246917361803,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2005": {
+            "final": {
+                "electrons_pct": 19.66935116604784,
+                "fossil_pct": 79.97979551835186,
+                "bio_pct": 0.3508533156002778,
+                "total": 154.82253575703984,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2006": {
+            "final": {
+                "electrons_pct": 19.989594200496427,
+                "fossil_pct": 79.51859685368585,
+                "bio_pct": 0.491808945817716,
+                "total": 151.84758356892394,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2007": {
+            "final": {
+                "electrons_pct": 20.143351179946215,
+                "fossil_pct": 79.33687991594962,
+                "bio_pct": 0.5197689041041622,
+                "total": 149.18168322062778,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2008": {
+            "final": {
+                "electrons_pct": 19.616220253159714,
+                "fossil_pct": 79.82469709879753,
+                "bio_pct": 0.5590826480427775,
+                "total": 150.78271574894222,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2009": {
+            "final": {
+                "electrons_pct": 20.25055052022538,
+                "fossil_pct": 79.37595951173448,
+                "bio_pct": 0.3734899680401565,
+                "total": 141.4075788701907,
+                "source": "Fouquet (2008) with Updates"
+            }
+        },
+        "2010": {
+            "final": {
+                "electrons_pct": 19.7214852454976,
+                "fossil_pct": 79.89187909386234,
+                "bio_pct": 0.3866356606400639,
+                "total": 146.59287313220153,
+                "source": "Fouquet (2008) with Updates"
+            }
+        }
+    }
+}
